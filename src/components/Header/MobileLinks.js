@@ -18,7 +18,7 @@ function MobileLinks({ isModalOpen, handleClose }) {
             opacity: 0,
           }}
           animate={{
-            opacity: [1, 1, 1],
+            opacity: [0, 1, 1],
             marginTop: index === 0 && "var(--height-header)",
           }}
           transition={{
