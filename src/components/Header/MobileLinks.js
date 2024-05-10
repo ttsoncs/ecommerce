@@ -21,7 +21,7 @@ function MobileLinks({ handleClose }) {
             opacity: 1,
           }}
           transition={{
-            delay: 0.25,
+            delay: 0.15,
           }}
           href={href}
           key={index}
