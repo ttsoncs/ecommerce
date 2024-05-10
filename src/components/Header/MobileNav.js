@@ -9,13 +9,13 @@ const variants = {
   open: {
     opacity: 1,
     transition: {
-      duration: 0.4,
+      duration: 0.25,
     },
   },
   closed: {
     opacity: 0,
     transition: {
-      duration: 0.4,
+      duration: 0.25,
     },
   },
 };
@@ -35,7 +35,6 @@ function MobileNav({ isModalOpen, handleClose }) {
         "--modal-position": isModalOpen ? "0" : "revert",
         "--top": "var(--modal-position)",
         "--bottom": "var(--modal-position)",
-        "--left": "var(--modal-position)",
         "--right": isModalOpen ? "0" : "var(--padding-space-header)",
         "--width": isModalOpen ? "revert" : "32px",
         "--height": isModalOpen ? "revert" : "32px",
@@ -43,11 +42,8 @@ function MobileNav({ isModalOpen, handleClose }) {
       }}
       layout={true}
     >
-      {isModalOpen && (
-        <MobileLinks
-          handleClose={handleClose}
-        ></MobileLinks>
-      )}
+      {/* <MobileLinks handleClose={handleClose}></MobileLinks> */}
+      {/* {isModalOpen && ()} */}
     </Modal>
   );
 }
@@ -62,7 +58,6 @@ const Modal = styled(motion.nav)`
     position: fixed;
     top: var(--top);
     bottom: var(--bottom);
-    left: var(--left);
     right: var(--right);
 
     width: var(--width);
@@ -70,6 +65,7 @@ const Modal = styled(motion.nav)`
 
     padding-top: var(--padding-top);
     background-color: var(--color-background-nav);
+    aspect-ratio: 1/1;
   }
 `;
 
