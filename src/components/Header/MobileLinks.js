@@ -22,7 +22,7 @@ function MobileLinks({ handleClose }) {
           }}
           transition={{
             duration: 0.5,
-            times: [0, 0.7, 1],
+            times: [0, 0.5, 1],
           }}
           href={href}
           key={index}
