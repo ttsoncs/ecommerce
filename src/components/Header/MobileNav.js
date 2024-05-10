@@ -43,9 +43,7 @@ function MobileNav({ isModalOpen, handleClose }) {
       }}
       layout={true}
     >
-      <AnimatePresence>
-        {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
-      </AnimatePresence>
+      {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
     </Modal>
   );
 }
