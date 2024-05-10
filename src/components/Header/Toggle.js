@@ -53,7 +53,7 @@ const Bar = styled.div`
   width: 14px;
   height: 1.5px;
 
-  transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1) 0.1s;
+  transition: transform 0.25s cubic-bezier(0.32, 0.72, 0, 1) 50ms;
 `;
 
 const TopBar = styled(Bar)`
