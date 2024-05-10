@@ -12,7 +12,7 @@ function Logo({ handleClose, size }) {
     >
       <StyledImage
         src="/images/logo.svg"
-        width={size + 8}
+        width={(size * 4) / 3}
         height={size}
         alt="About page"
       ></StyledImage>
@@ -31,7 +31,6 @@ const StyledLink = styled(Link)`
 
   color: var(--color-primary-text);
   text-decoration: none;
-
 `;
 
 const StyledImage = styled(Image)`
