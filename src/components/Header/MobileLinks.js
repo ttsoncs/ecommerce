@@ -10,13 +10,32 @@ import { NAV_LINKS } from "@/constants";
 function MobileLinks({ handleClose }) {
   const pathname = usePathname();
 
+  const variants = {
+    open: {
+      opacity: 1,
+      transition: {
+        duration: 0.25,
+      },
+    },
+    closed: {
+      opacity: 0,
+      transition: {
+        duration: 0.25,
+      },
+    },
+  };
+
   return (
     <>
       {NAV_LINKS.map(({ title, href }, index) => (
         <MotionLinkWrapper
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.25 }}
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{ delay: 0.4 }}
           href={href}
           key={index}
           onClick={handleClose}
