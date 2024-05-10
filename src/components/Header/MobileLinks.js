@@ -18,10 +18,11 @@ function MobileLinks({ handleClose }) {
             opacity: 0,
           }}
           animate={{
-            opacity: 1,
+            opacity: [0, 0, 1],
           }}
           transition={{
-            delay: 0.15,
+            duration: 0.5,
+            times: [0, 0.7, 1],
           }}
           href={href}
           key={index}
