@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
 
-function MobileLinks({ handleClose }) {
+function MobileLinks({ isModalOpen, handleClose }) {
   const pathname = usePathname();
 
   return (
@@ -18,11 +18,15 @@ function MobileLinks({ handleClose }) {
             opacity: 0,
           }}
           animate={{
-            opacity: [0, 0, 1],
+            opacity: [1, 1, 1],
+            marginTop: index === 0 && "var(--height-header)",
           }}
           transition={{
             duration: 0.5,
             times: [0, 0.5, 1],
+            marginTop: {
+              ease: [0.32, 0.72, 0, 1],
+            },
           }}
           href={href}
           key={index}

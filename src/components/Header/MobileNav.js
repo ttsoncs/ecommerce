@@ -39,11 +39,15 @@ function MobileNav({ isModalOpen, handleClose }) {
         "--right": isModalOpen ? "0" : "var(--padding-space-header)",
         "--width": isModalOpen ? "revert" : "32px",
         "--height": isModalOpen ? "revert" : "32px",
-        "--padding-top": isModalOpen ? "var(--height-header)" : "0",
       }}
       layout={true}
     >
-      {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
+      {isModalOpen && (
+        <MobileLinks
+          isModalOpen={isModalOpen}
+          handleClose={handleClose}
+        ></MobileLinks>
+      )}
     </Modal>
   );
 }
@@ -64,7 +68,6 @@ const Modal = styled(motion.nav)`
     width: var(--width);
     height: var(--height);
 
-    padding-top: var(--padding-top);
     background-color: var(--color-background-nav);
   }
 `;
