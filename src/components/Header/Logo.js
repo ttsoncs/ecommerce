@@ -12,7 +12,7 @@ function Logo({ handleClose, size }) {
     >
       <StyledImage
         src="/images/logo.svg"
-        width={size}
+        width={size + 8}
         height={size}
         alt="About page"
       ></StyledImage>
@@ -24,7 +24,7 @@ function Logo({ handleClose, size }) {
 const StyledLink = styled(Link)`
   display: flex;
   align-items: baseline;
-  gap: 8px;
+  gap: 2px;
 
   font-size: 24px;
   font-weight: var(--font-weight-semibold);
