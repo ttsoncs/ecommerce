@@ -51,8 +51,8 @@ const GlobalStyles = createGlobalStyle`
     --font-weight-semibold: ${FONT_WEIGHTS.semibold};
     --font-weight-bold: ${FONT_WEIGHTS.bold};
 
-    --padding-space-header: 28px;
-    --padding-space: 16px;
+    --space-header: 28px;
+    --space: 16px;
     
     --height-header: 64px;
   }

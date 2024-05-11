@@ -52,6 +52,8 @@ const MaxWidthWrapper = styled.header`
   width: 100%;
   height: var(--height-header);
 
+  background-color: var(--color-background);
+
   @media ${QUERIES.phoneAndSmaller} {
     border-bottom: 1px solid var(--color-border);
   }
@@ -63,7 +65,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  padding-inline: var(--padding-space-header);
+  margin-inline: var(--space-header);
 
   @media ${QUERIES.phoneAndSmaller} {
     align-items: center;

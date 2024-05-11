@@ -32,11 +32,10 @@ function MobileNav({ isModalOpen, handleClose }) {
       variants={variants}
       onClick={handleClose}
       style={{
-        "--modal-position": isModalOpen ? "0" : "revert",
-        "--top": "var(--modal-position)",
-        "--bottom": "var(--modal-position)",
-        "--left": "var(--modal-position)",
-        "--right": isModalOpen ? "0" : "var(--padding-space-header)",
+        "--top": isModalOpen ? "0" : "16px",
+        "--bottom": isModalOpen ? "0" : "unset",
+        "--left": isModalOpen ? "0" : "unset",
+        "--right": isModalOpen ? "0" : "var(--space-header)",
         "--width": isModalOpen ? "revert" : "32px",
         "--height": isModalOpen ? "revert" : "32px",
       }}
@@ -68,8 +67,7 @@ const Modal = styled(motion.nav)`
     width: var(--width);
     height: var(--height);
 
-    background-color: var(--color-background / 0.9);
-    backdrop-filter: blur(12px);
+    background-color: var(--color-background-nav);
   }
 `;
 

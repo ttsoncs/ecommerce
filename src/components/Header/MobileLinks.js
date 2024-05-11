@@ -53,7 +53,7 @@ const StyledLink = styled(Link)`
   font-weight: var(--font-weight-semibold);
 
   padding: 12px;
-  padding-left: var(--padding-space-header);
+  padding-left: var(--space-header);
 
   color: var(--color-active);
   max-width: 75%;
