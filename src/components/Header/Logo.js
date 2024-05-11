@@ -10,12 +10,19 @@ function Logo({ handleClose, size }) {
       href="/"
       onClick={handleClose}
     >
-      <StyledImage
-        src="/images/logo.svg"
-        width={(size * 4) / 3}
-        height={size}
-        alt="About page"
-      ></StyledImage>
+      <ImageWrapper
+        style={{
+          "--width": `${(size * 4) / 3}px`,
+          "--height": `${size}px`,
+        }}
+      >
+        <Image
+          src="/images/logo.svg"
+          fill={true}
+          alt="About page"
+          priority={true}
+        />
+      </ImageWrapper>
       Soncs
     </StyledLink>
   );
@@ -33,8 +40,11 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-const StyledImage = styled(Image)`
+const ImageWrapper = styled.div`
   align-self: center;
+  position: relative;
+  width: var(--width);
+  height: var(--height);
 `;
 
 export default Logo;

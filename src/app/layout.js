@@ -44,6 +44,7 @@ const wotfard = localFont({
     },
   ],
   display: "fallback",
+  preload: false,
 });
 
 export default function RootLayout({ children }) {
