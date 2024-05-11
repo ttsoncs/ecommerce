@@ -16,6 +16,7 @@ function MobileLinks({ isModalOpen, handleClose }) {
         <MotionLinkWrapper
           initial={{
             opacity: 0,
+            marginTop: index === 0 && "0px",
           }}
           animate={{
             opacity: [0, 1, 1],

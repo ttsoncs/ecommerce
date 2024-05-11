@@ -20,7 +20,6 @@ function Logo({ handleClose, size }) {
           src="/images/logo.svg"
           fill={true}
           alt="About page"
-          priority={true}
         />
       </ImageWrapper>
       Soncs
@@ -41,8 +40,9 @@ const StyledLink = styled(Link)`
 `;
 
 const ImageWrapper = styled.div`
-  align-self: center;
   position: relative;
+  align-self: center;
+
   width: var(--width);
   height: var(--height);
 `;
