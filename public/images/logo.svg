@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 12">
   <path d="M 8 12 L 1 0 L 15 0 z" fill='white'></path>
+  <path d="M 5 3 Q 8 0 11 3 Q 8 6 5 3 z" fill="transparent" stroke="black" stroke-width="1"/>
+  <circle r="0.5" cx="8" cy="3" fill="black" />
 </svg>
