@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 12">
-  <path d="M 8 12 L 1 0 L 15 0 z" fill='white'></path>
+  <path d="M 8 12 L 1 0 L 15 0 z" fill='transparent'></path>
 <line opacity="1.11022e-16" stroke="hsl(0, 100%, 50%)" stroke-width="0.0625" x1="1" y1="0" x2="8" y2="0"></line>
 <line opacity="0.0204082" stroke="hsl(7.5, 100%, 50%)" stroke-width="0.0625" x1="1" y1="0" x2="8" y2="0.25"></line>
 <line opacity="0.0408163" stroke="hsl(15, 100%, 50%)" stroke-width="0.0625" x1="1" y1="0" x2="8" y2="0.5"></line>
