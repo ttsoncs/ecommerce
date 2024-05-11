@@ -15,17 +15,18 @@ function MobileLinks({ isModalOpen, handleClose }) {
       {NAV_LINKS.map(({ title, href }, index) => (
         <MotionLinkWrapper
           initial={{
-            opacity: 0,
-            marginTop: index === 0 && "0px",
+            opacity: 1,
+            y: 0,
           }}
           animate={{
             opacity: [0, 1, 1],
-            marginTop: index === 0 && "var(--height-header)",
+            y: 64,
           }}
           transition={{
             duration: 0.5,
             times: [0, 0.5, 1],
-            marginTop: {
+            y: {
+              duration: 0.5,
               ease: [0.32, 0.72, 0, 1],
             },
           }}
