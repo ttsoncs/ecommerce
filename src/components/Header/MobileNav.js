@@ -68,7 +68,8 @@ const Modal = styled(motion.nav)`
     width: var(--width);
     height: var(--height);
 
-    background-color: var(--color-background-nav);
+    background-color: var(--color-background / 0.9);
+    backdrop-filter: blur(12px);
   }
 `;
 
