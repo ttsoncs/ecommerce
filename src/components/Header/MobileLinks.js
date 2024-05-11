@@ -19,7 +19,7 @@ function MobileLinks({ isModalOpen, handleClose }) {
             y: 0,
           }}
           animate={{
-            opacity: [0, 1, 1],
+            opacity: [0, 0, 1],
             y: 64,
           }}
           transition={{
