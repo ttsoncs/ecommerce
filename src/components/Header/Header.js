@@ -51,6 +51,10 @@ const MaxWidthWrapper = styled.header`
 
   width: 100%;
   height: var(--height-header);
+
+  @media ${QUERIES.phoneAndSmaller} {
+    border-bottom: 1px solid var(--color-border);
+  }
 `;
 
 const Wrapper = styled.div`
