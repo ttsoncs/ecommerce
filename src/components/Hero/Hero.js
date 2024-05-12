@@ -32,7 +32,8 @@ const MaxWidthWrapper = styled.main`
 `;
 
 const NameBadge = styled.section`
-  aspect-ratio: 2/3;
+  grid-column: 1 / -1;
+  /* aspect-ratio: 2/3; */
 
   width: min(320px, 100%);
 

@@ -66,6 +66,7 @@ export default function RootLayout({ children }) {
           <MaxWidthWrapper>
             <Header />
             <Hero />
+            <Hero />
             {children}
           </MaxWidthWrapper>
           <Analytics />

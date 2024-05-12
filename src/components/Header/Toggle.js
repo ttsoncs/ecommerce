@@ -41,8 +41,8 @@ const Wrapper = styled.button`
     padding: 0;
     cursor: pointer;
 
-    width: 32px;
-    height: 32px;
+    width: var(--size-toggle);
+    height: var(--size-toggle);
   }
 `;
 

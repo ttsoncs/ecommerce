@@ -32,12 +32,14 @@ function MobileNav({ isModalOpen, handleClose }) {
       variants={variants}
       onClick={handleClose}
       style={{
-        "--top": isModalOpen ? "0" : "16px",
-        "--bottom": isModalOpen ? "0" : "unset",
-        "--left": isModalOpen ? "0" : "unset",
+        "--top": isModalOpen
+          ? "0"
+          : "calc((var(--height-header) - var(--size-toggle)) / 2)",
+        "--bottom": isModalOpen ? "0" : "revert",
+        "--left": isModalOpen ? "0" : "revert",
         "--right": isModalOpen ? "0" : "var(--space-header)",
-        "--width": isModalOpen ? "revert" : "32px",
-        "--height": isModalOpen ? "revert" : "32px",
+        "--width": isModalOpen ? "revert" : "var(--size-toggle)",
+        "--height": isModalOpen ? "revert" : "var(--size-toggle)",
       }}
       layout={true}
     >

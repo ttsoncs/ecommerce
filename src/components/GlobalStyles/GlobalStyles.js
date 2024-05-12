@@ -54,6 +54,8 @@ const GlobalStyles = createGlobalStyle`
     --space-header: 28px;
     --space: 16px;
     
+    --size-toggle: 32px;
+
     --height-header: 64px;
   }
 `;
