@@ -14,10 +14,10 @@ const variant = {
     pathLength: 1,
     fill: "hsl(0deg 0% 100%)",
     transition: {
-      duration: 1.5,
+      duration: 3,
       ease: [0.32, 0.72, 0, 1],
       fill: {
-        duration: 1.5,
+        duration: 1,
         ease: "linear",
       },
     },
@@ -50,12 +50,12 @@ function SVG() {
       viewBox="0 0 16 14"
     >
       <motion.path
-        d="M 8 13 L 1 1 L 15 1 z"
+        d="M 8 13 L 1 1 L 15 1 L 8 13 L 1 1"
         variants={variant}
         initial="hidden"
         animate="visible"
         stroke="white"
-        strokeWidth="0.5"
+        strokeWidth="0.75"
       ></motion.path>
     </svg>
   );
