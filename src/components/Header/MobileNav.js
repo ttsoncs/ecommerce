@@ -12,8 +12,12 @@ const variants = {
     right: "var(--right)",
     width: "var(--width)",
     height: "var(--height)",
+    filter: "blur(0px)",
     transition: {
-      duration: 0.25,
+      duration: .25,
+      filter: {
+        duration: .5
+      }
     },
   },
   closed: {
@@ -22,8 +26,9 @@ const variants = {
     right: "var(--right)",
     width: "var(--width)",
     height: "var(--height)",
+    filter: "blur(5px)",
     transition: {
-      duration: 0.25,
+      duration: .25,
     },
   },
 };
@@ -35,7 +40,7 @@ function MobileNav({ isModalOpen, handleClose }) {
       initial={"closed"}
       transition={{
         ease: [0.32, 0.72, 0, 1],
-        duration: 0.5,
+        duration: .5,
       }}
       variants={variants}
       onClick={handleClose}
@@ -49,11 +54,7 @@ function MobileNav({ isModalOpen, handleClose }) {
       }}
       layout={true}
     >
-      {isModalOpen && (
-        <MobileLinks
-          handleClose={handleClose}
-        ></MobileLinks>
-      )}
+      {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
     </Modal>
   );
 }
@@ -68,6 +69,8 @@ const Modal = styled(motion.nav)`
     position: fixed;
 
     background-color: var(--color-background-nav);
+
+    /* filter: blur(var(--blur)); */
   }
 `;
 
