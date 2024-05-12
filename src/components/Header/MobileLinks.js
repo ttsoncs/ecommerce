@@ -23,10 +23,10 @@ function MobileLinks({ handleClose }) {
             y: 64,
           }}
           transition={{
-            duration: 0.5,
+            duration: 5,
             times: [0, 0.5, 1],
             y: {
-              duration: 0.5,
+              duration: 5,
               ease: [0.32, 0.72, 0, 1],
             },
           }}

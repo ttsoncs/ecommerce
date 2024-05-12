@@ -8,12 +8,20 @@ import { QUERIES } from "@/constants";
 const variants = {
   open: {
     opacity: 1,
+    top: "var(--top)",
+    right: "var(--right)",
+    width: "var(--width)",
+    height: "var(--height)",
     transition: {
       duration: 0.25,
     },
   },
   closed: {
     opacity: 0,
+    top: "var(--top)",
+    right: "var(--right)",
+    width: "var(--width)",
+    height: "var(--height)",
     transition: {
       duration: 0.25,
     },
@@ -35,15 +43,13 @@ function MobileNav({ isModalOpen, handleClose }) {
         "--top": isModalOpen
           ? "0"
           : "calc((var(--height-header) - var(--size-toggle)) / 2)",
-        "--bottom": isModalOpen ? "0" : "revert",
-        "--left": isModalOpen ? "0" : "revert",
         "--right": isModalOpen ? "0" : "var(--space-header)",
-        "--width": isModalOpen ? "revert" : "var(--size-toggle)",
-        "--height": isModalOpen ? "revert" : "var(--size-toggle)",
+        "--width": isModalOpen ? "100%" : "var(--size-toggle)",
+        "--height": isModalOpen ? "100%" : "var(--size-toggle)",
       }}
       layout={true}
     >
-      {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
+      {/* <MobileLinks handleClose={handleClose}></MobileLinks> */}
     </Modal>
   );
 }
@@ -56,13 +62,6 @@ const Modal = styled(motion.nav)`
     flex-direction: column;
 
     position: fixed;
-    top: var(--top);
-    bottom: var(--bottom);
-    left: var(--left);
-    right: var(--right);
-
-    width: var(--width);
-    height: var(--height);
 
     background-color: var(--color-background-nav);
   }
