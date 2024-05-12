@@ -6,7 +6,7 @@ import MobileLinks from "./MobileLinks";
 import { QUERIES } from "@/constants";
 
 const variants = {
-  open: {
+  visible: {
     opacity: 1,
     top: "var(--top)",
     right: "var(--right)",
@@ -20,7 +20,7 @@ const variants = {
       }
     },
   },
-  closed: {
+  hidden: {
     opacity: 0,
     top: "var(--top)",
     right: "var(--right)",
@@ -36,11 +36,11 @@ const variants = {
 function MobileNav({ isModalOpen, handleClose }) {
   return (
     <Modal
-      animate={isModalOpen ? "open" : "closed"}
-      initial={"closed"}
+      animate={isModalOpen ? "visible" : "hidden"}
+      initial={"hidden"}
       transition={{
         ease: [0.32, 0.72, 0, 1],
-        duration: .5,
+        duration: 0.5,
       }}
       variants={variants}
       onClick={handleClose}
@@ -69,8 +69,6 @@ const Modal = styled(motion.nav)`
     position: fixed;
 
     background-color: var(--color-background-nav);
-
-    /* filter: blur(var(--blur)); */
   }
 `;
 
