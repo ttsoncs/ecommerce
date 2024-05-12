@@ -8,9 +8,7 @@ import { QUERIES } from "@/constants";
 function Hero() {
   return (
     <MaxWidthWrapper>
-      <Widget></Widget>
-      <Widget></Widget>
-      <Widget></Widget>
+      <NameBadge />
     </MaxWidthWrapper>
   );
 }
@@ -21,6 +19,8 @@ const MaxWidthWrapper = styled.main`
 
   margin-inline: var(--space);
 
+  padding: var(--space-header);
+
   border: 1px solid var(--color-border);
   border-top: none;
 
@@ -29,13 +29,12 @@ const MaxWidthWrapper = styled.main`
   }
 `;
 
-const Widget = styled.section`
-  aspect-ratio: 1/1;
+const NameBadge = styled.section`
+  aspect-ratio: 2/3;
 
-  width: min(256px, 100%);
+  width: min(320px, 100%);
 
   margin-inline: auto;
-  margin-block: var(--space-header);
 
   border-radius: 40px;
 
