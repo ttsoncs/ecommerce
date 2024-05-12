@@ -3,7 +3,7 @@ export const COLORS = {
   gray: {
     500: "hsl(0deg 0% 58%)",
     900: "hsl(0deg 0% 14%)",
-    1000: "hsl(0deg 0% 6%)",
+    1000: "hsl(0deg 0% 4%)",
   },
   black: "hsl(0deg 0% 0%)",
   green: "hsl(145deg 95% 40%)",
