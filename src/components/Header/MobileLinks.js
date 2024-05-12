@@ -26,8 +26,9 @@ function MobileLinks({ isModalOpen, handleClose }) {
             duration: 0.5,
             times: [0, 0.5, 1],
             y: {
-              duration: 0.5,
+              duration: 0.75,
               ease: [0.32, 0.72, 0, 1],
+              type: "spring"
             },
           }}
           href={href}
