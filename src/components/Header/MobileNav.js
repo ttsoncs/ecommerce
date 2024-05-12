@@ -51,7 +51,6 @@ function MobileNav({ isModalOpen, handleClose }) {
     >
       {isModalOpen && (
         <MobileLinks
-          isModalOpen={isModalOpen}
           handleClose={handleClose}
         ></MobileLinks>
       )}

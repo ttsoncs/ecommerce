@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
 
-function MobileLinks({ isModalOpen, handleClose }) {
+function MobileLinks({ handleClose }) {
   const pathname = usePathname();
 
   return (
@@ -26,9 +26,10 @@ function MobileLinks({ isModalOpen, handleClose }) {
             duration: 0.5,
             times: [0, 0.5, 1],
             y: {
-              duration: 0.75,
-              ease: [0.32, 0.72, 0, 1],
-              type: "spring"
+              duration: 0.5,
+              type: "spring",
+              stiffness: 140,
+              damping: 20,
             },
           }}
           href={href}
