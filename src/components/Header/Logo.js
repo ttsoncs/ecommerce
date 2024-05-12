@@ -14,10 +14,10 @@ const variant = {
     pathLength: 1,
     fill: "hsl(0deg 0% 100%)",
     transition: {
-      duration: 3,
+      duration: 1.5,
       ease: [0.32, 0.72, 0, 1],
       fill: {
-        duration: 1,
+        duration: 0.5,
         ease: "linear",
       },
     },
@@ -73,7 +73,7 @@ const StyledLink = styled(Link)`
 `;
 
 const SVGWrapper = styled.div`
-  align-self: baseline;
+  align-self: first baseline;
 
   width: var(--width);
   height: var(--height);
