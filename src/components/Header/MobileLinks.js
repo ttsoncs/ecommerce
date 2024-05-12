@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
 
-function MobileLinks({ handleClose }) {
+function MobileLinks({ isModalOpen, handleClose }) {
   const pathname = usePathname();
 
   return (
@@ -16,7 +16,7 @@ function MobileLinks({ handleClose }) {
         <MotionLinkWrapper
           initial={{
             opacity: 0,
-            y: 0,
+            y: 64,
           }}
           animate={{
             opacity: [0, 1, 1],
