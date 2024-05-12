@@ -49,7 +49,7 @@ function MobileNav({ isModalOpen, handleClose }) {
       }}
       layout={true}
     >
-      {/* <MobileLinks handleClose={handleClose}></MobileLinks> */}
+      {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
     </Modal>
   );
 }
