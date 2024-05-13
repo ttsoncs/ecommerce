@@ -29,12 +29,12 @@ const wotfard = localFont({
       style: "normal",
     },
     {
-      path: "../../public/fonts/LINESeedSans_W_Bd.woff2",
+      path: "../../public/fonts/wotfard-semibold-webfont.woff2",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../../public/fonts/LINESeedSans_W_XBd.woff2",
+      path: "../../public/fonts/wotfard-bold-webfont.woff2",
       weight: "700",
       style: "normal",
     },
