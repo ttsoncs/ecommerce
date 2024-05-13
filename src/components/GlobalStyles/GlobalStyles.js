@@ -37,6 +37,7 @@ const GlobalStyles = createGlobalStyle`
   html, body { 
     height: 100%;
     font-size: 16px;
+    letter-spacing: .04em;
   }
 
   html {
