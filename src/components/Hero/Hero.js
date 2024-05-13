@@ -41,7 +41,7 @@ const NameBadge = styled.section`
 
   border-radius: 40px;
 
-  background-color: var(--color-background-nav);
+  background-color: var(--color-background-card);
 `;
 
 export default Hero;

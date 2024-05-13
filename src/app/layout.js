@@ -38,11 +38,6 @@ const wotfard = localFont({
       weight: "700",
       style: "normal",
     },
-    {
-      path: "../../public/fonts/wotfard-regularitalic-webfont.woff2",
-      weight: "400",
-      style: "italic",
-    },
   ],
   display: "fallback",
   preload: false,
