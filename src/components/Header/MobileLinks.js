@@ -58,7 +58,7 @@ function MobileLinks({ handleClose }) {
 }
 
 const StyledLink = styled(Link)`
-  font-size: 22px;
+  font-size: 23px;
   font-weight: var(--font-weight-bold);
 
   padding: 12px;

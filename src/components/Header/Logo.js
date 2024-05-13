@@ -33,7 +33,7 @@ const StyledLink = styled(Link)`
   align-items: baseline;
   gap: 2px;
 
-  font-size: 18px;
+  font-size: 19px;
   font-weight: var(--font-weight-bold);
 
   color: var(--color-primary-text);
