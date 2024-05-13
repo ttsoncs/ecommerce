@@ -24,7 +24,7 @@ const MaxWidthWrapper = styled.main`
   border: 1px solid var(--color-border);
   border-top: none;
 
-  aspect-ratio: 1/2;
+  aspect-ratio: 2/1;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-template-columns: repeat(1, 1fr);
