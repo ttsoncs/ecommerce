@@ -23,7 +23,7 @@ function Logo({ handleClose, size }) {
           priority={true}
         />
       </ImageWrapper> */}
-      LINE Design System
+      Trinh The Son
     </StyledLink>
   );
 }
