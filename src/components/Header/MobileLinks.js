@@ -3,12 +3,15 @@ import Link from "next/link";
 
 import React from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, useWillChange } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
 
 function MobileLinks({ handleClose }) {
   const pathname = usePathname();
+
+  const willChange = useWillChange();
+
 
   return (
     <>
@@ -23,10 +26,10 @@ function MobileLinks({ handleClose }) {
             y: 64,
           }}
           transition={{
-            duration: .5,
+            duration: 0.5,
             times: [0, 0.5, 1],
             y: {
-              duration: .5,
+              duration: 0.5,
               type: "spring",
               stiffness: 140,
               damping: 20,
@@ -40,6 +43,7 @@ function MobileLinks({ handleClose }) {
               pathname === href
                 ? "var(--color-primary-text)"
                 : "var(--color-secondary-text)",
+            willChange,
           }}
           layout="position"
         >

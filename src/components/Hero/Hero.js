@@ -21,9 +21,6 @@ const MaxWidthWrapper = styled.main`
 
   padding: var(--space-header);
 
-  border: 1px solid var(--color-border);
-  border-top: none;
-
   aspect-ratio: 1/2;
 
   @media ${QUERIES.phoneAndSmaller} {
