@@ -10,7 +10,7 @@ function Logo({ handleClose, size }) {
       href="/"
       onClick={handleClose}
     >
-      <ImageWrapper
+      {/* <ImageWrapper
         style={{
           "--width": `${(size * 8) / 7}px`,
           "--height": `${size}px`,
@@ -22,8 +22,8 @@ function Logo({ handleClose, size }) {
           alt="About page"
           priority={true}
         />
-      </ImageWrapper>
-      Trinh The Son
+      </ImageWrapper> */}
+      LINE Design System
     </StyledLink>
   );
 }
@@ -33,8 +33,8 @@ const StyledLink = styled(Link)`
   align-items: baseline;
   gap: 2px;
 
-  font-size: 21px;
-  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
 
   color: var(--color-primary-text);
   text-decoration: none;
