@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import React from "react";
 import styled from "styled-components";
@@ -14,9 +13,11 @@ const variant = {
     pathLength: 1,
     fill: "hsl(0deg 0% 100%)",
     transition: {
+      delay: 0.5,
       duration: 1.5,
       ease: [0.32, 0.72, 0, 1],
       fill: {
+        delay: 0.5,
         duration: 0.5,
         ease: "linear",
       },
@@ -32,13 +33,22 @@ function Logo({ handleClose, size }) {
     >
       <SVGWrapper
         style={{
-          "--width": `${(size * 4) / 3}px`,
+          "--width": `${(size * 16) / 14}px`,
           "--height": `${size}px`,
         }}
       >
         <SVG />
       </SVGWrapper>
-      Soncs
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          delay: 0.75,
+          duration: 0.25,
+        }}
+      >
+        Soncs
+      </motion.p>
     </StyledLink>
   );
 }
@@ -74,7 +84,7 @@ const StyledLink = styled(Link)`
 `;
 
 const SVGWrapper = styled.div`
-  align-self: first baseline;
+  align-self: center;
 
   width: var(--width);
   height: var(--height);
