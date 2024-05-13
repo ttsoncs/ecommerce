@@ -12,7 +12,7 @@ function Logo({ handleClose, size }) {
     >
       <ImageWrapper
         style={{
-          "--width": `${(size * 4) / 3}px`,
+          "--width": `${(size * 8) / 7}px`,
           "--height": `${size}px`,
         }}
       >
@@ -31,7 +31,6 @@ function Logo({ handleClose, size }) {
 const StyledLink = styled(Link)`
   display: flex;
   align-items: baseline;
-  gap: 2px;
 
   font-size: 24px;
   font-weight: var(--font-weight-semibold);
