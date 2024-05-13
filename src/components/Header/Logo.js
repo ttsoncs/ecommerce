@@ -23,7 +23,7 @@ function Logo({ handleClose, size }) {
           priority={true}
         />
       </ImageWrapper>
-      TheSon
+      Trinh The Son
     </StyledLink>
   );
 }
@@ -33,7 +33,7 @@ const StyledLink = styled(Link)`
   align-items: baseline;
   gap: 2px;
 
-  font-size: 24px;
+  font-size: 21px;
   font-weight: var(--font-weight-semibold);
 
   color: var(--color-primary-text);
