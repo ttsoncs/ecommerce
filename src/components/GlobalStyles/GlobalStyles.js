@@ -44,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
     --color-primary-text: ${COLORS.white};
     --color-secondary-text: ${COLORS.gray[500]};
     --color-background: ${COLORS.black};
-    --color-background-nav: ${COLORS.green};
+    --color-background-nav: ${COLORS.gray[1000]};
     --color-background-card: ${COLORS.gray[1000]};
     --color-border: ${COLORS.gray[900]};
 
