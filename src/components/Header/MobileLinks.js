@@ -7,11 +7,14 @@ import { motion, useWillChange } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
 
+import useLockBodyScroll from "@/hooks/useLockBodyScroll";
+
 function MobileLinks({ handleClose }) {
   const pathname = usePathname();
 
   const willChange = useWillChange();
 
+  useLockBodyScroll();
 
   return (
     <>
