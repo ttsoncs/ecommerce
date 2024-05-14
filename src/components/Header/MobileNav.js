@@ -28,7 +28,7 @@ const variants = {
     height: "var(--height)",
     filter: "blur(5px)",
     transition: {
-      duration: .25,
+      duration: .5,
     },
   },
 };
@@ -46,9 +46,9 @@ function MobileNav({ isModalOpen, handleClose }) {
       onClick={handleClose}
       style={{
         "--top": isModalOpen
-          ? "0"
+          ? "0px"
           : "calc((var(--height-header) - var(--size-toggle)) / 2)",
-        "--right": isModalOpen ? "0" : "var(--space-header)",
+        "--right": isModalOpen ? "0px" : "var(--space-header)",
         "--width": isModalOpen ? "100%" : "var(--size-toggle)",
         "--height": isModalOpen ? "100%" : "var(--size-toggle)",
       }}
