@@ -13,7 +13,7 @@ const variants = {
     width: "var(--width)",
     height: "var(--height)",
     transition: {
-      duration: .25,
+      duration: 0.25,
     },
   },
   hidden: {
@@ -23,7 +23,7 @@ const variants = {
     width: "var(--width)",
     height: "var(--height)",
     transition: {
-      duration: .4,
+      duration: 0.3,
     },
   },
 };
