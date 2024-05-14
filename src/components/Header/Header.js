@@ -26,7 +26,7 @@ function Header() {
       <Wrapper>
         <Logo
           handleClose={handleClose}
-          size={24}
+          size={22}
         />
         <Toggle
           isModalOpen={isModalOpen}

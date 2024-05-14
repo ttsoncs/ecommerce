@@ -12,7 +12,7 @@ function Logo({ handleClose, size }) {
     >
       {/* <ImageWrapper
         style={{
-          "--width": `${(size * 8) / 7}px`,
+          "--width": `${(size * 16) / 15}px`,
           "--height": `${size}px`,
         }}
       >
@@ -23,7 +23,7 @@ function Logo({ handleClose, size }) {
           priority={true}
         />
       </ImageWrapper> */}
-      Trinh The Son
+      Son
     </StyledLink>
   );
 }
@@ -31,9 +31,9 @@ function Logo({ handleClose, size }) {
 const StyledLink = styled(Link)`
   display: flex;
   align-items: baseline;
-  gap: 2px;
+  gap: 4px;
 
-  font-size: 19px;
+  font-size: 24px;
   font-weight: var(--font-weight-semibold);
 
   color: var(--color-primary-text);
