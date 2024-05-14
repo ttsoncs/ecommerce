@@ -32,7 +32,6 @@ function MobileLinks({ handleClose }) {
             duration: 0.5,
             times: [0, 0.5, 1],
             y: {
-              duration: 0.5,
               type: "spring",
               stiffness: 140,
               damping: 20,
