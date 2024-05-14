@@ -23,10 +23,12 @@ function MobileLinks({ handleClose }) {
           initial={{
             opacity: 0,
             y: 0,
+            filter: "blur(5px)",
           }}
           animate={{
             opacity: [0, 1, 1],
             y: 64,
+            filter: "blur(0px)",
           }}
           transition={{
             duration: 0.5,
@@ -36,6 +38,9 @@ function MobileLinks({ handleClose }) {
               type: "spring",
               stiffness: 140,
               damping: 20,
+            },
+            filter: {
+              duration: 0.5,
             },
           }}
           href={href}

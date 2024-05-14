@@ -12,12 +12,8 @@ const variants = {
     right: "var(--right)",
     width: "var(--width)",
     height: "var(--height)",
-    filter: "blur(0px)",
     transition: {
       duration: .25,
-      filter: {
-        duration: .5
-      }
     },
   },
   hidden: {
@@ -26,7 +22,6 @@ const variants = {
     right: "var(--right)",
     width: "var(--width)",
     height: "var(--height)",
-    filter: "blur(5px)",
     transition: {
       duration: .5,
     },
