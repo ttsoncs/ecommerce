@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import React from "react";
 import styled from "styled-components";
-import { motion, useWillChange } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
 
@@ -11,8 +11,6 @@ import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 
 function MobileLinks({ handleClose }) {
   const pathname = usePathname();
-
-  const willChange = useWillChange();
 
   useLockBodyScroll();
 
@@ -51,7 +49,6 @@ function MobileLinks({ handleClose }) {
               pathname === href
                 ? "var(--color-primary-text)"
                 : "var(--color-secondary-text)",
-            willChange,
           }}
           layout="position"
         >
