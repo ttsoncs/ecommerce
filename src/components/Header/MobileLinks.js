@@ -69,7 +69,7 @@ const StyledLink = styled(Link)`
   max-width: 75%;
 
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
 `;
 
 const MotionLinkWrapper = motion(StyledLink);
