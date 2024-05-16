@@ -21,7 +21,6 @@ function MobileLinks({ handleClose }) {
           initial={{
             opacity: 0,
             y: 0,
-            filter: "blur(5px)",
           }}
           animate={{
             opacity: [0, 1, 1],
