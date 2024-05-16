@@ -18,7 +18,7 @@ const variants = {
     opacity: 0,
     transition: {
       opacity: {
-        duration: 0.5,
+        duration: 0.3,
       },
     },
   },
@@ -31,7 +31,7 @@ function MobileNav({ isModalOpen, handleClose }) {
       initial={"closed"}
       transition={{
         ease: [0.32, 0.72, 0, 1],
-        duration: 0.7,
+        duration: 0.5,
       }}
       variants={variants}
       onClick={handleClose}
