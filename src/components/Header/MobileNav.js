@@ -6,24 +6,20 @@ import MobileLinks from "./MobileLinks";
 import { QUERIES } from "@/constants";
 
 const variants = {
-  visible: {
+  open: {
     opacity: 1,
-    top: "var(--top)",
-    right: "var(--right)",
-    width: "var(--width)",
-    height: "var(--height)",
     transition: {
-      duration: 0.25,
+      opacity: {
+        duration: 0.25,
+      },
     },
   },
-  hidden: {
+  closed: {
     opacity: 0,
-    top: "var(--top)",
-    right: "var(--right)",
-    width: "var(--width)",
-    height: "var(--height)",
     transition: {
-      duration: 0.3,
+      opacity: {
+        duration: 0.5,
+      },
     },
   },
 };
@@ -31,21 +27,22 @@ const variants = {
 function MobileNav({ isModalOpen, handleClose }) {
   return (
     <Modal
-      animate={isModalOpen ? "visible" : "hidden"}
-      initial={"hidden"}
+      animate={isModalOpen ? "open" : "closed"}
+      initial={"closed"}
       transition={{
         ease: [0.32, 0.72, 0, 1],
-        duration: 0.5,
+        duration: 0.7,
       }}
       variants={variants}
       onClick={handleClose}
       style={{
-        "--top": isModalOpen
-          ? "0px"
-          : "calc((var(--height-header) - var(--size-toggle)) / 2)",
-        "--right": isModalOpen ? "0px" : "var(--space-header)",
-        "--width": isModalOpen ? "100%" : "var(--size-toggle)",
-        "--height": isModalOpen ? "100%" : "var(--size-toggle)",
+        "--modal-position": isModalOpen ? "0" : "revert",
+        "--top": "var(--modal-position)",
+        "--bottom": "var(--modal-position)",
+        "--left": "var(--modal-position)",
+        "--right": isModalOpen ? "0" : "var(--space-header)",
+        "--width": isModalOpen ? "revert" : "var(--size-toggle)",
+        "--height": isModalOpen ? "revert" : "var(--size-toggle)",
       }}
       layout={true}
     >
@@ -62,6 +59,13 @@ const Modal = styled(motion.nav)`
     flex-direction: column;
 
     position: fixed;
+    top: var(--top);
+    bottom: var(--bottom);
+    left: var(--left);
+    right: var(--right);
+
+    width: var(--width);
+    height: var(--height);
 
     background-color: var(--color-background-nav);
   }

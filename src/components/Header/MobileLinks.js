@@ -6,12 +6,10 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
-
 import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 
 function MobileLinks({ handleClose }) {
   const pathname = usePathname();
-
   useLockBodyScroll();
 
   return (
@@ -21,6 +19,7 @@ function MobileLinks({ handleClose }) {
           initial={{
             opacity: 0,
             y: 0,
+            filter: "blur(5px)",
           }}
           animate={{
             opacity: [0, 1, 1],
