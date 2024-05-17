@@ -11,7 +11,7 @@ const variants = {
 
     transition: {
       opacity: {
-        duration: 0.35,
+        duration: 0.25,
       },
     },
   },
@@ -20,7 +20,7 @@ const variants = {
 
     transition: {
       opacity: {
-        duration: 0.4,
+        duration: 0.3,
       },
     },
   },
@@ -46,7 +46,7 @@ function MobileNav({ isModalOpen, handleClose }) {
       transition={{
         layout: {
           ease: [0.32, 0.72, 0, 1],
-          duration: 0.7,
+          duration: 0.5,
         },
       }}
       layout={true}

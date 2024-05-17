@@ -17,14 +17,14 @@ const variants = {
 
     transition: {
       opacity: {
-        duration: 0.7,
+        duration: 0.5,
       },
       filter: {
-        duration: 0.7,
+        duration: 0.5,
       },
       y: {
         type: "spring",
-        stiffness: 110,
+        stiffness: 140,
         damping: 20,
       },
     },
