@@ -36,7 +36,7 @@ const StyledLink = styled(Link)`
   font-size: 24px;
   font-weight: var(--font-weight-semibold);
 
-  color: var(--color-primary);
+  color: var(--color-primary-text);
   text-decoration: none;
 `;
 
