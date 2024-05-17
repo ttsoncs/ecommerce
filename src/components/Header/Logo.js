@@ -23,7 +23,7 @@ function Logo({ handleClose, size }) {
           priority={true}
         />
       </ImageWrapper> */}
-      The Son
+      Soncs
     </StyledLink>
   );
 }
@@ -36,7 +36,7 @@ const StyledLink = styled(Link)`
   font-size: 24px;
   font-weight: var(--font-weight-semibold);
 
-  color: var(--color-primary-text);
+  color: var(--color-primary);
   text-decoration: none;
 `;
 

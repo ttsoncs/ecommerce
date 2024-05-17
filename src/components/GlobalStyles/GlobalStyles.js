@@ -46,6 +46,8 @@ const GlobalStyles = createGlobalStyle`
     --color-background-nav: ${COLORS.gray[1000]};
     --color-background-card: ${COLORS.gray[1000]};
     --color-border: ${COLORS.gray[900]};
+    --color-primary: ${COLORS.green};
+
 
     --font-weight-normal: ${FONT_WEIGHTS.regular};
     --font-weight-medium: ${FONT_WEIGHTS.medium};
