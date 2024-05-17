@@ -23,9 +23,8 @@ const variants = {
         duration: 0.5,
       },
       y: {
-        type: "spring",
-        stiffness: 140,
-        damping: 20,
+        ease: [0.32, 0.72, 0, 1],
+        duration: 0.5,
       },
     },
   },
