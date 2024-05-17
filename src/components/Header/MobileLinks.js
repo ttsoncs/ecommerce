@@ -36,7 +36,6 @@ function MobileLinks({ handleClose }) {
             },
             filter: {
               duration: 0.5,
-              delay: 0.1
             },
           }}
           layout="position"
