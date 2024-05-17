@@ -23,7 +23,7 @@ function Logo({ handleClose, size }) {
           priority={true}
         />
       </ImageWrapper> */}
-      TS
+      The Son
     </StyledLink>
   );
 }

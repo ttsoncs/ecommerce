@@ -34,9 +34,9 @@ const wotfard = localFont({
       style: "normal",
     },
     {
-      path: "../../public/fonts/wotfard-bold-webfont.woff2",
-      weight: "700",
-      style: "normal",
+      path: "../../public/fonts/wotfard-semibolditalic-webfont.woff2",
+      weight: "600",
+      style: "italic",
     },
   ],
   display: "fallback",
