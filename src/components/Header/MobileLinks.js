@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
+
 import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 
 function MobileLinks({ handleClose }) {
@@ -28,7 +29,6 @@ function MobileLinks({ handleClose }) {
           }}
           transition={{
             duration: 0.5,
-            times: [0, 0.5, 1],
             y: {
               type: "spring",
               stiffness: 140,
@@ -36,8 +36,10 @@ function MobileLinks({ handleClose }) {
             },
             filter: {
               duration: 0.5,
+              delay: 0.1
             },
           }}
+          layout="position"
           href={href}
           key={index}
           onClick={handleClose}
@@ -47,7 +49,6 @@ function MobileLinks({ handleClose }) {
                 ? "var(--color-primary-text)"
                 : "var(--color-secondary-text)",
           }}
-          layout="position"
         >
           {title}
         </MotionLinkWrapper>

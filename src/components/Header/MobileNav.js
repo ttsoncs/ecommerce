@@ -8,17 +8,19 @@ import { QUERIES } from "@/constants";
 const variants = {
   visible: {
     opacity: 1,
+
     transition: {
       opacity: {
-        duration: 0.35,
+        duration: 0.25,
       },
     },
   },
   hidden: {
     opacity: 0,
+
     transition: {
       opacity: {
-        duration: 0.5,
+        duration: 0.3,
       },
     },
   },
@@ -31,6 +33,7 @@ const visibleStyle = {
 const hiddenStyle = {
   width: "var(--size-toggle)",
   height: "var(--size-toggle)",
+
   right: "var(--space-header)",
 };
 
@@ -43,14 +46,14 @@ function MobileNav({ isModalOpen, handleClose }) {
       transition={{
         layout: {
           ease: [0.32, 0.72, 0, 1],
-          duration: 0.7,
+          duration: 0.5,
         },
       }}
       layout={true}
       onClick={handleClose}
       style={isModalOpen ? visibleStyle : hiddenStyle}
     >
-      {/* {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>} */}
+      {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
     </Modal>
   );
 }
