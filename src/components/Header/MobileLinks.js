@@ -9,6 +9,42 @@ import { NAV_LINKS } from "@/constants";
 
 import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 
+const variants = {
+  visible: {
+    opacity: [0, 1, 1],
+    y: 64,
+    filter: "blur(0px)",
+
+    transition: {
+      opacity: {
+        duration: 0.5,
+      },
+      filter: {
+        duration: 0.5,
+      },
+      y: {
+        type: "spring",
+        stiffness: 140,
+        damping: 20,
+      },
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 0,
+    filter: "blur(5px)",
+
+    transition: {
+      opacity: {
+        duration: 0.5,
+      },
+      filter: {
+        duration: 0.5,
+      },
+    },
+  },
+};
+
 function MobileLinks({ handleClose }) {
   const pathname = usePathname();
   useLockBodyScroll();
@@ -17,27 +53,9 @@ function MobileLinks({ handleClose }) {
     <>
       {NAV_LINKS.map(({ title, href }, index) => (
         <MotionLinkWrapper
-          initial={{
-            opacity: 0,
-            y: 0,
-            filter: "blur(5px)",
-          }}
-          animate={{
-            opacity: [0, 1, 1],
-            y: 64,
-            filter: "blur(0px)",
-          }}
-          transition={{
-            duration: 0.5,
-            y: {
-              type: "spring",
-              stiffness: 140,
-              damping: 20,
-            },
-            filter: {
-              duration: 0.5,
-            },
-          }}
+          variants={variants}
+          initial={"hidden"}
+          animate={"visible"}
           layout="position"
           href={href}
           key={index}

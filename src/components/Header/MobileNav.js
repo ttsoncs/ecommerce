@@ -41,7 +41,7 @@ function MobileNav({ isModalOpen, handleClose }) {
   return (
     <Modal
       variants={variants}
-      initial={"hidden"}
+      initial="hidden"
       animate={isModalOpen ? "visible" : "hidden"}
       transition={{
         layout: {
