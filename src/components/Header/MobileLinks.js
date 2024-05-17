@@ -20,7 +20,7 @@ const variants = {
         duration: 0.5,
       },
       filter: {
-        duration: 0.5,
+        duration: 0.55,
       },
       y: {
         ease: [0.32, 0.72, 0, 1],
