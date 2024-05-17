@@ -18,17 +18,17 @@ const variants = {
     opacity: 0,
     transition: {
       opacity: {
-        duration: 0.35,
+        duration: 0.5,
       },
     },
   },
 };
 
-const visible = {
+const visibleStyle = {
   inset: 0,
 };
 
-const hidden = {
+const hiddenStyle = {
   width: "var(--size-toggle)",
   height: "var(--size-toggle)",
   right: "var(--space-header)",
@@ -46,9 +46,9 @@ function MobileNav({ isModalOpen, handleClose }) {
           duration: 0.7,
         },
       }}
-      onClick={handleClose}
-      style={isModalOpen ? visible : hidden}
       layout={true}
+      onClick={handleClose}
+      style={isModalOpen ? visibleStyle : hiddenStyle}
     >
       {/* {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>} */}
     </Modal>
