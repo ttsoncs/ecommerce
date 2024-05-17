@@ -29,7 +29,7 @@ const wotfard = localFont({
       style: "normal",
     },
     {
-      path: "../../public/fonts/SupremeLLWeb-Bold.woff2",
+      path: "../../public/fonts/SupremeLLWeb-Black.woff2",
       weight: "600",
       style: "normal",
     },
