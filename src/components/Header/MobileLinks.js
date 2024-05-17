@@ -17,16 +17,15 @@ const variants = {
 
     transition: {
       opacity: {
-        duration: 0.5,
+        duration: 0.7,
       },
       filter: {
-        duration: 0.5,
+        duration: 0.7,
       },
       y: {
-        // type: "spring",
-        // stiffness: 80,
-        // damping: 10,
-        ease: [0.32, 0.72, 0, 1],
+        type: "spring",
+        // stiffness: 100,
+        // damping: 20,
         duration: 0.7,
       },
     },
@@ -35,15 +34,6 @@ const variants = {
     opacity: 0,
     y: 0,
     filter: "blur(5px)",
-
-    transition: {
-      opacity: {
-        duration: 0.5,
-      },
-      filter: {
-        duration: 0.5,
-      },
-    },
   },
 };
 
