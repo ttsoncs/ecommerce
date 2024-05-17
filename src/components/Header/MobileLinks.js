@@ -24,9 +24,8 @@ const variants = {
       },
       y: {
         type: "spring",
-        // stiffness: 100,
-        // damping: 20,
-        duration: 0.7,
+        stiffness: 110,
+        damping: 20,
       },
     },
   },
