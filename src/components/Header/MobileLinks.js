@@ -38,6 +38,7 @@ const variants = {
 
 function MobileLinks({ handleClose }) {
   const pathname = usePathname();
+
   useLockBodyScroll();
 
   return (
