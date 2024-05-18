@@ -34,3 +34,13 @@ export const NAV_LINKS = [
   { title: "lab", href: "/lab" },
   { title: "contact", href: "/contact" },
 ];
+
+export const DAYS = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];

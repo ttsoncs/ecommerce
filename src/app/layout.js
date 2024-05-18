@@ -10,6 +10,7 @@ import GlobalStyles from "@/components/GlobalStyles";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Trinh The Son",
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
             <Header />
             <Hero />
             {children}
+            <Footer/>
           </MaxWidthWrapper>
           <Analytics />
           <SpeedInsights />

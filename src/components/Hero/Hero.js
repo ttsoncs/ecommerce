@@ -33,8 +33,7 @@ const MaxWidthWrapper = styled.main`
 
   /* padding: var(--space-header); */
 
-  border: 1px solid var(--color-border);
-  border-top: none;
+  border-inline: 1px solid var(--color-border);
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-template-columns: repeat(1, 1fr);
