@@ -92,7 +92,7 @@ const Name = styled.p`
 
   color: var(--color-primary-text);
 
-  margin-left: var(--space);
+  margin-left: 12px;
 
   text-transform: uppercase;
 `;
@@ -103,8 +103,7 @@ const Title = styled.p`
 
   color: var(--color-secondary-text);
 
-  margin-top: 12px;
-  margin-left: var(--space);
+  margin-left: 12px;
 `;
 
 export default Hero;
