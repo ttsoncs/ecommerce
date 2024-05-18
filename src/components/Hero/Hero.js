@@ -13,7 +13,7 @@ function Hero() {
           <Overlay>
             <TextWrapper>
               <Name>Son</Name>
-              <Title>Front End Intern</Title>
+              <Title>Intern</Title>
             </TextWrapper>
           </Overlay>
         </NameBadge>
