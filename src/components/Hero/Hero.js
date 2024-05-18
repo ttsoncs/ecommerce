@@ -69,6 +69,7 @@ const Background = styled.div`
     var(--color-background-card) 1px
   );
   background-size: 14px 14px;
+  background-position: center;
 
   overflow: hidden;
 `;
