@@ -12,11 +12,11 @@ function Hero() {
         <NameBadge>
           <Company>
             <Holder />
-            <Brand>VERCEL</Brand>
+            <Brand>EMPTY</Brand>
           </Company>
           <Overlay>
             <TextWrapper>
-              <Name>Son</Name>
+              <Name>SON</Name>
               <Title>Intern</Title>
             </TextWrapper>
           </Overlay>
@@ -83,7 +83,7 @@ const Holder = styled.div`
 
   border-radius: 10px;
 
-  background-color: var(--color-border);
+  background-color: var(--color-background);
 `;
 
 const Brand = styled.p`
