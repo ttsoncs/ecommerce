@@ -10,9 +10,12 @@ function Hero() {
     <MaxWidthWrapper>
       <Wrapper>
         <NameBadge>
+          <Company>
+            <Brand>Endava</Brand>
+          </Company>
           <Overlay>
             <TextWrapper>
-              <Name>Son</Name>
+              <Name>SON</Name>
               <Title>Intern</Title>
             </TextWrapper>
           </Overlay>
@@ -49,7 +52,7 @@ const Wrapper = styled.section`
 
 const NameBadge = styled.section`
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
 
   width: 100%;
   height: 100%;
@@ -61,12 +64,29 @@ const NameBadge = styled.section`
   overflow: hidden;
 `;
 
+const Company = styled.div`
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1;
+`;
+
+const Brand = styled.p`
+  font-size: 20px;
+  font-weight: var(--font-weight-semibold);
+
+  color: var(--color-primary-text);
+
+  margin-left: var(--space-card);
+
+  text-transform: uppercase;
+`;
+
 const Overlay = styled.div`
   display: flex;
   align-items: flex-end;
 
-  width: 100%;
-  height: 60%;
+  flex: 2;
 
   margin: var(--space);
   border-bottom-left-radius: 24px;
@@ -98,7 +118,7 @@ const Name = styled.p`
 `;
 
 const Title = styled.p`
-  font-size: 17px;
+  font-size: 20px;
   font-weight: var(--font-weight-regular);
 
   color: var(--color-secondary-text);
