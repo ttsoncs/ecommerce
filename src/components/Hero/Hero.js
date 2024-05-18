@@ -58,7 +58,7 @@ const NameBadge = styled.section`
   width: 100%;
   height: 100%;
 
-  border-radius: 40px;
+  border-radius: 16px;
 
   background-color: var(--color-background-card);
 
@@ -83,7 +83,7 @@ const Holder = styled.div`
 
   border-radius: 10px;
 
-  background-color: var(--color-background);
+  background-color: var(--color-border);
 `;
 
 const Brand = styled.p`
