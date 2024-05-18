@@ -10,7 +10,12 @@ function Hero() {
     <MaxWidthWrapper>
       <Wrapper>
         <NameBadge>
-          <Background />
+          <Overlay>
+            <TextWrapper>
+              <Name>Son</Name>
+              <Title>Front End Intern</Title>
+            </TextWrapper>
+          </Overlay>
         </NameBadge>
       </Wrapper>
     </MaxWidthWrapper>
@@ -56,9 +61,12 @@ const NameBadge = styled.section`
   overflow: hidden;
 `;
 
-const Background = styled.div`
+const Overlay = styled.div`
+  display: flex;
+  align-items: flex-end;
+
   width: 100%;
-  height: 70%;
+  height: 60%;
 
   margin: var(--space);
   border-bottom-left-radius: 24px;
@@ -72,6 +80,30 @@ const Background = styled.div`
   background-position: center;
 
   overflow: hidden;
+`;
+
+const TextWrapper = styled.div`
+  height: 60%;
+`;
+
+const Name = styled.p`
+  font-size: 28px;
+  font-weight: var(--font-weight-semibold);
+
+  color: var(--color-primary-text);
+
+  margin-left: var(--space);
+
+  text-transform: uppercase;
+`;
+
+const Title = styled.p`
+  font-size: 17px;
+  font-weight: var(--font-weight-regular);
+
+  color: var(--color-primary-text);
+
+  margin-left: var(--space);
 `;
 
 export default Hero;

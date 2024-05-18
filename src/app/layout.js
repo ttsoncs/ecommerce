@@ -19,6 +19,11 @@ export const metadata = {
 const wotfard = localFont({
   src: [
     {
+      path: "../../public/fonts/wotfard-regular-webfont.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
       path: "../../public/fonts/wotfard-medium-webfont.woff2",
       weight: "500",
       style: "normal",
