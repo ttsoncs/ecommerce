@@ -104,8 +104,6 @@ const Overlay = styled.div`
   flex: 2;
 
   margin: var(--space);
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
 
   background-image: radial-gradient(
     var(--color-border) 1px,
