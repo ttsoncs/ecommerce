@@ -31,14 +31,14 @@ const MaxWidthWrapper = styled.main`
 
 const Wrapper = styled.section`
   grid-column: 1 / -1;
-  aspect-ratio: 2/3;
+  justify-self: center;
+  aspect-ratio: 2 / 3;
 
-  margin-inline: auto;
-  margin-block: var(--space-card);
+  margin: var(--space-card);
 
-  width: min(288px, 100%);
+  width: min(320px, 100%);
 
-  background-color: red;
+  border: 1px solid red;
 `;
 
 // const NameBadge = styled.section`
