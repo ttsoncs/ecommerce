@@ -101,8 +101,9 @@ const Title = styled.p`
   font-size: 17px;
   font-weight: var(--font-weight-regular);
 
-  color: var(--color-primary-text);
+  color: var(--color-secondary-text);
 
+  margin-top: 12px;
   margin-left: var(--space);
 `;
 
