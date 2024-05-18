@@ -36,7 +36,7 @@ const Wrapper = styled.section`
 
   margin: var(--space-card);
 
-  width: min(320px, 100%);
+  width: min(288px, 100%);
 
   border: 1px solid red;
 `;
