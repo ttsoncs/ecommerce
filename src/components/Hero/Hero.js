@@ -8,8 +8,11 @@ import { QUERIES } from "@/constants";
 function Hero() {
   return (
     <MaxWidthWrapper>
-      {/* <NameBadge /> */}
-      <Wrapper />
+      <Wrapper>
+        <NameBadge>
+          <Background />
+        </NameBadge>
+      </Wrapper>
     </MaxWidthWrapper>
   );
 }
@@ -37,21 +40,37 @@ const Wrapper = styled.section`
   margin: var(--space-card);
 
   width: min(288px, 100%);
-
-  border: 1px solid red;
 `;
 
-// const NameBadge = styled.section`
-//   grid-column: 1 / -1;
-//   /* aspect-ratio: 2/3; */
+const NameBadge = styled.section`
+  display: flex;
+  align-items: flex-end;
 
-//   width: min(320px, 100%);
+  width: 100%;
+  height: 100%;
 
-//   margin-inline: auto;
+  border-radius: 40px;
 
-//   border-radius: 40px;
+  background-color: var(--color-background-card);
 
-//   background-color: var(--color-background-card);
-// `;
+  overflow: hidden;
+`;
+
+const Background = styled.div`
+  width: 100%;
+  height: 70%;
+
+  margin: var(--space);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+
+  background-image: radial-gradient(
+    var(--color-border) 1px,
+    var(--color-background-card) 1px
+  );
+  background-size: 14px 14px;
+
+  overflow: hidden;
+`;
 
 export default Hero;
