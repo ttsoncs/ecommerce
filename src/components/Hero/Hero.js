@@ -11,11 +11,12 @@ function Hero() {
       <Wrapper>
         <NameBadge>
           <Company>
-            <Brand>Endava</Brand>
+            <Holder />
+            <Brand>VERCEL</Brand>
           </Company>
           <Overlay>
             <TextWrapper>
-              <Name>SON</Name>
+              <Name>Son</Name>
               <Title>Intern</Title>
             </TextWrapper>
           </Overlay>
@@ -66,9 +67,23 @@ const NameBadge = styled.section`
 
 const Company = styled.div`
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
 
   flex: 1;
+`;
+
+const Holder = styled.div`
+  align-self: center;
+
+  width: 80px;
+  height: 20px;
+
+  margin-top: var(--space-card);
+
+  border-radius: 10px;
+
+  background-color: var(--color-border);
 `;
 
 const Brand = styled.p`
@@ -113,8 +128,6 @@ const Name = styled.p`
   color: var(--color-primary-text);
 
   margin-left: 12px;
-
-  text-transform: uppercase;
 `;
 
 const Title = styled.p`
