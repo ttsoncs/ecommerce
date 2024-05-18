@@ -8,40 +8,50 @@ import { QUERIES } from "@/constants";
 function Hero() {
   return (
     <MaxWidthWrapper>
-      <NameBadge />
+      {/* <NameBadge /> */}
+      <Wrapper />
     </MaxWidthWrapper>
   );
 }
 
 const MaxWidthWrapper = styled.main`
   display: grid;
-  gap: 8px;
 
   margin-inline: var(--space);
 
-  padding: var(--space-header);
+  /* padding: var(--space-header); */
 
   border: 1px solid var(--color-border);
   border-top: none;
-
-  aspect-ratio: 2/1;
 
   @media ${QUERIES.phoneAndSmaller} {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
 
-const NameBadge = styled.section`
+const Wrapper = styled.section`
   grid-column: 1 / -1;
-  /* aspect-ratio: 2/3; */
-
-  width: min(320px, 100%);
+  aspect-ratio: 2/3;
 
   margin-inline: auto;
+  margin-block: var(--space-card);
 
-  border-radius: 40px;
+  width: min(288px, 100%);
 
-  background-color: var(--color-background-card);
+  background-color: red;
 `;
+
+// const NameBadge = styled.section`
+//   grid-column: 1 / -1;
+//   /* aspect-ratio: 2/3; */
+
+//   width: min(320px, 100%);
+
+//   margin-inline: auto;
+
+//   border-radius: 40px;
+
+//   background-color: var(--color-background-card);
+// `;
 
 export default Hero;

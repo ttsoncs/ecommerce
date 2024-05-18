@@ -55,6 +55,7 @@ const GlobalStyles = createGlobalStyle`
     --font-weight-bold: ${FONT_WEIGHTS.bold};
 
     --space-header: 28px;
+    --space-card: 28px;
     --space: 16px;
     
     --size-toggle: 32px;
