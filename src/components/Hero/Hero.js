@@ -12,7 +12,7 @@ function Hero() {
         <NameBadge>
           <Company>
             <Holder />
-            <Brand>EMPTY</Brand>
+            <Brand>Vercel</Brand>
           </Company>
           <Overlay>
             <TextWrapper>
@@ -58,6 +58,7 @@ const NameBadge = styled.section`
   height: 100%;
 
   border-radius: 16px;
+  border: 1px solid var(--color-border);
 
   background-color: var(--color-background-card);
 
@@ -75,14 +76,14 @@ const Company = styled.div`
 const Holder = styled.div`
   align-self: center;
 
-  width: 80px;
-  height: 20px;
+  width: 25%;
+  height: 10%;
 
   margin-top: var(--space-card);
 
   border-radius: 10px;
 
-  background-color: var(--color-border);
+  background-color: white;
 `;
 
 const Brand = styled.p`
@@ -92,8 +93,6 @@ const Brand = styled.p`
   color: var(--color-primary-text);
 
   margin-left: var(--space-card);
-
-  text-transform: uppercase;
 `;
 
 const Overlay = styled.div`
@@ -134,6 +133,7 @@ const Title = styled.p`
   color: var(--color-secondary-text);
 
   margin-left: 12px;
+  margin-top: 6px;
 `;
 
 export default Hero;
