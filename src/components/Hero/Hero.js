@@ -32,7 +32,7 @@ function Hero() {
                 alt="About page"
                 priority={true}
                 style={{
-                  transform: "scale(1.25) "
+                  transform: "scale(1.25)"
                 }}
               />
             </ImageWrapper>
@@ -163,7 +163,7 @@ const ImageWrapper = styled.div`
   height: var(--height);
 
   border-radius: 50%;
-  border: 1px solid var(--color-border);
+  border: 2px solid white;
 
   background-color: white;
 
