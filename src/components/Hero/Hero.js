@@ -11,32 +11,26 @@ function Hero() {
     <MaxWidthWrapper>
       <Wrapper>
         <NameBadge>
-          <Company>
-            <Holder />
-            <Brand>Vercel</Brand>
-          </Company>
-          <Overlay>
+          <Holder />
+          <NameWrapper>
+          </NameWrapper>
+          <DotBackground>
             {/* <TextWrapper>
               <Name>SON</Name>
               <Title>Intern</Title>
             </TextWrapper> */}
-            <ImageWrapper
-              style={{
-                "--width": "200px",
-                "--height": "200px",
-              }}
-            >
+            <ImageWrapper>
               <Image
                 src="/images/avatar.webp"
                 fill={true}
-                alt="About page"
+                alt="Avatar"
                 priority={true}
                 style={{
-                  transform: "scale(1.4)"
+                  transform: "scale(1.3)",
                 }}
               />
             </ImageWrapper>
-          </Overlay>
+          </DotBackground>
         </NameBadge>
       </Wrapper>
     </MaxWidthWrapper>
@@ -82,7 +76,7 @@ const NameBadge = styled.section`
   overflow: hidden;
 `;
 
-const Company = styled.div`
+const NameWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,10 +85,12 @@ const Company = styled.div`
 `;
 
 const Holder = styled.div`
+  position: absolute;
+
   align-self: center;
 
-  width: 25%;
-  height: 10%;
+  width: 15%;
+  height: 2%;
 
   margin-top: var(--space-card);
 
@@ -103,19 +99,9 @@ const Holder = styled.div`
   background-color: white;
 `;
 
-const Brand = styled.p`
-  font-size: 20px;
-  font-weight: var(--font-weight-semibold);
-
-  color: var(--color-primary-text);
-
-  margin-left: var(--space-card);
-`;
-
-const Overlay = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const DotBackground = styled.div`
+  display: grid;
+  place-content: center;
 
   flex: 2;
 
@@ -131,44 +117,19 @@ const Overlay = styled.div`
   overflow: hidden;
 `;
 
-const TextWrapper = styled.div`
-  height: 60%;
-`;
-
-const Name = styled.p`
-  font-size: 28px;
-  font-weight: var(--font-weight-semibold);
-
-  color: var(--color-primary-text);
-
-  margin-left: 12px;
-`;
-
-const Title = styled.p`
-  font-size: 20px;
-  font-weight: var(--font-weight-regular);
-
-  color: var(--color-secondary-text);
-
-  margin-left: 12px;
-  margin-top: 6px;
-`;
-
 const ImageWrapper = styled.div`
   position: relative;
-  z-index: 0;
   align-self: center;
 
-  width: var(--width);
-  height: var(--height);
+  width: 192px;
+  height: 192px;
 
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid var(--color-badge);
 
-  background-color: white;
+  background-color: var(--color-badge);
 
   overflow: hidden;
 `;
-
 
 export default Hero;
