@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24">
   <path d="M 2 4 L 12 4" stroke="white" stroke-width="4" stroke-linecap="round" fill="transparent"></path>
   <path d="M 2 12 L 9 12" stroke="white" stroke-width="4" stroke-linecap="round" fill="transparent"></path>
-  <path d="M 15 12 L 22 12" stroke="white" stroke-width="4" stroke-linecap="round" fill="transparent"></path>
+  <path d="M 15 12 L 22 12" stroke="hsl(145deg 95% 40%)" stroke-width="4" stroke-linecap="round" fill="transparent"></path>
   <path d="M 22 20 L 12 20" stroke="white" stroke-width="4" stroke-linecap="round" fill="transparent"></path>
 </svg>
