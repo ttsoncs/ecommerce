@@ -13,12 +13,9 @@ function Hero() {
         <NameBadge>
           <Holder />
           <NameWrapper>
+            <Name>The Son</Name>
           </NameWrapper>
           <DotBackground>
-            {/* <TextWrapper>
-              <Name>SON</Name>
-              <Title>Intern</Title>
-            </TextWrapper> */}
             <ImageWrapper>
               <Image
                 src="/images/avatar.webp"
@@ -77,14 +74,6 @@ const NameBadge = styled.section`
   overflow: hidden;
 `;
 
-const NameWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  flex: 1;
-`;
-
 const Holder = styled.div`
   position: absolute;
 
@@ -98,6 +87,23 @@ const Holder = styled.div`
   border-radius: 10px;
 
   background-color: white;
+`;
+
+const NameWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  flex: 1;
+`;
+
+const Name = styled.p`
+  font-size: 24px;
+  font-weight: var(--font-weight-semibold);
+
+  color: var(--color-primary-text);
+
+  text-transform: uppercase;
 `;
 
 const DotBackground = styled.div`
