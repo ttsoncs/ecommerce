@@ -10,9 +10,9 @@ function Logo({ handleClose, size }) {
       href="/"
       onClick={handleClose}
     >
-      {/* <ImageWrapper
+      <ImageWrapper
         style={{
-          "--width": `${(size * 16) / 15}px`,
+          "--width": `${size}px`,
           "--height": `${size}px`,
         }}
       >
@@ -22,8 +22,7 @@ function Logo({ handleClose, size }) {
           alt="About page"
           priority={true}
         />
-      </ImageWrapper> */}
-      The Son
+      </ImageWrapper>
     </StyledLink>
   );
 }
@@ -46,6 +45,8 @@ const ImageWrapper = styled.div`
 
   width: var(--width);
   height: var(--height);
+
+  transform: rotate(45deg);
 `;
 
 export default Logo;
