@@ -13,7 +13,7 @@ function Hero() {
         <NameBadge>
           <Holder />
           <NameWrapper>
-            <Name>The Son</Name>
+            <Name>Trinh The Son</Name>
           </NameWrapper>
           <DotBackground>
             <ImageWrapper>
@@ -102,8 +102,6 @@ const Name = styled.p`
   font-weight: var(--font-weight-semibold);
 
   color: var(--color-primary-text);
-
-  text-transform: uppercase;
 `;
 
 const DotBackground = styled.div`
