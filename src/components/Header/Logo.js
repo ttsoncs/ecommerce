@@ -23,7 +23,6 @@ function Logo({ handleClose, size }) {
           priority={true}
         />
       </ImageWrapper>
-      Portfolio
     </StyledLink>
   );
 }
