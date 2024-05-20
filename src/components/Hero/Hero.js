@@ -62,6 +62,7 @@ const Wrapper = styled.section`
 `;
 
 const NameBadge = styled.section`
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -89,8 +90,8 @@ const Holder = styled.div`
 
   align-self: center;
 
-  width: 17.5%;
-  height: 2%;
+  width: 25%;
+  height: 4%;
 
   margin-top: var(--space-card);
 
