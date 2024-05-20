@@ -89,7 +89,7 @@ const Holder = styled.div`
 
   align-self: center;
 
-  width: 15%;
+  width: 17.5%;
   height: 2%;
 
   margin-top: var(--space-card);
