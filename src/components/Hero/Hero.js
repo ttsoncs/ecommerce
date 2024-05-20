@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 
 import { QUERIES } from "@/constants";
 
@@ -15,10 +16,26 @@ function Hero() {
             <Brand>Vercel</Brand>
           </Company>
           <Overlay>
-            <TextWrapper>
+            {/* <TextWrapper>
               <Name>SON</Name>
               <Title>Intern</Title>
-            </TextWrapper>
+            </TextWrapper> */}
+            <ImageWrapper
+              style={{
+                "--width": "200px",
+                "--height": "200px",
+              }}
+            >
+              <Image
+                src="/images/avatar.webp"
+                fill={true}
+                alt="About page"
+                priority={true}
+                style={{
+                  transform: "scale(1.25) "
+                }}
+              />
+            </ImageWrapper>
           </Overlay>
         </NameBadge>
       </Wrapper>
@@ -97,7 +114,8 @@ const Brand = styled.p`
 
 const Overlay = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
 
   flex: 2;
 
@@ -135,5 +153,22 @@ const Title = styled.p`
   margin-left: 12px;
   margin-top: 6px;
 `;
+
+const ImageWrapper = styled.div`
+  position: relative;
+  z-index: 0;
+  align-self: center;
+
+  width: var(--width);
+  height: var(--height);
+
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+
+  background-color: white;
+
+  overflow: hidden;
+`;
+
 
 export default Hero;

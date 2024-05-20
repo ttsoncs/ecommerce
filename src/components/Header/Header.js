@@ -45,6 +45,7 @@ function Header() {
 const MaxWidthWrapper = styled.header`
   display: flex;
   align-items: center;
+  z-index: 1;
 
   position: sticky;
   top: 0;
