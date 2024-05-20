@@ -11,8 +11,8 @@ function Hero() {
     <MaxWidthWrapper>
       <Wrapper>
         <NameBadge>
-          <Holder />
           <NameWrapper>
+            <Company>Apple</Company>
             <Name>Trinh The Son</Name>
           </NameWrapper>
           <DotBackground>
@@ -74,25 +74,11 @@ const NameBadge = styled.section`
   overflow: hidden;
 `;
 
-const Holder = styled.div`
-  position: absolute;
-
-  align-self: center;
-
-  width: 25%;
-  height: 4%;
-
-  margin-top: var(--space-card);
-
-  border-radius: 10px;
-
-  background-color: white;
-`;
-
 const NameWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
   flex: 1;
 `;
@@ -100,6 +86,15 @@ const NameWrapper = styled.div`
 const Name = styled.p`
   font-size: 24px;
   font-weight: var(--font-weight-semibold);
+
+  color: var(--color-primary-text);
+`;
+
+const Company = styled.p`
+  font-size: 19px;
+  font-weight: var(--font-weight-semibold);
+
+  margin-top: 28px;
 
   color: var(--color-primary-text);
 `;
