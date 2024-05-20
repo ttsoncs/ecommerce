@@ -10,7 +10,10 @@ function Footer() {
   return (
     <Wrapper>
       <Text>© 2024 Trinh The Son. All rights reserved.</Text>
-      <Text>Enjoy the rest of your {DAYS[new Date().getDay()]}!</Text>
+      <Text>
+        Enjoy the rest of your{" "}
+        <Highlight>{DAYS[new Date().getDay()]}!</Highlight>
+      </Text>
     </Wrapper>
   );
 }
@@ -29,13 +32,19 @@ const Wrapper = styled.footer`
     border-top: 1px solid var(--color-border);
 
     font-size: 14px;
-    
+
     color: var(--color-secondary-text);
   }
 `;
 
 const Text = styled.p`
   text-align: center;
+`;
+
+const Highlight = styled.strong`
+  font-weight: var(--font-weight-semibold);
+
+  color: var(--color-primary);
 `;
 
 export default Footer;
