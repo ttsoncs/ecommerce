@@ -12,7 +12,7 @@ import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 const variants = {
   visible: {
     opacity: [0, 1, 1],
-    y: 96,
+    y: 64,
     filter: "blur(0px)",
 
     transition: {

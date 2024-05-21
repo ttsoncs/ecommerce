@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
       </head>
       <StyledComponentsRegistry>
         <AppBackground>
-          <Banner>Welcome! Portfolio Under Development.</Banner>
+          {/* <Banner>Welcome! Portfolio Under Development.</Banner> */}
           <MaxWidthWrapper>
             <Header />
             <Hero />
