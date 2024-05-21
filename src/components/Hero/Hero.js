@@ -24,7 +24,6 @@ function Hero() {
                 priority={true}
                 style={{
                   transform: "scale(1.3)",
-                  clipPath: "circle(50%)",
                 }}
               />
             </ImageWrapper>
@@ -80,7 +79,6 @@ const NameWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
   flex: 1;
 `;
 
@@ -92,7 +90,7 @@ const Name = styled.p`
 `;
 
 const Nickname = styled.p`
-  font-size: 17px;
+  font-size: 19px;
   font-weight: var(--font-weight-regular);
 
   color: var(--color-secondary-text);
@@ -122,9 +120,6 @@ const ImageWrapper = styled.div`
 
   width: 192px;
   height: 192px;
-
-  /* border-radius: 50%; */
-  /* border: 1px solid var(--color-background-badge); */
 
   clip-path: circle(50%);
 
