@@ -46,14 +46,14 @@ function MobileNav({ isModalOpen, handleClose }) {
       transition={{
         layout: {
           ease: [0.32, 0.72, 0, 1],
-          duration: 0.7,
+          duration: 0.5,
         },
       }}
       layout={true}
       onClick={handleClose}
       style={isModalOpen ? visibleStyle : hiddenStyle}
     >
-      {/* {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>} */}
+      {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
     </Modal>
   );
 }
