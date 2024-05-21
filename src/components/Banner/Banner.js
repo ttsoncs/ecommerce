@@ -2,12 +2,11 @@
 
 import React from "react";
 import styled from "styled-components";
-import { createPortal } from "react-dom";
 
 function Banner({ children }) {
   return (
     <Wrapper>
-      <Text>Welcome! Portfolio Under Development.</Text>
+      <Text>{children}</Text>
     </Wrapper>
   );
 }
