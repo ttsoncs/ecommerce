@@ -125,9 +125,8 @@ const ImageWrapper = styled.div`
   height: 192px;
 
   border-radius: 50%;
-  border: 1px solid var(--color-badge);
 
-  background-color: var(--color-badge);
+  background-color: var(--color-background-badge);
 
   overflow: hidden;
 `;
