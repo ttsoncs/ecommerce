@@ -56,11 +56,11 @@ export default function RootLayout({ children }) {
       <StyledComponentsRegistry>
         <AppBackground>
           <MaxWidthWrapper>
-            <Banner />
+            {/* <Banner /> */}
             <Header />
             <Hero />
             {children}
-            {/* <Footer /> */}
+            <Footer />
           </MaxWidthWrapper>
           <Analytics />
           <SpeedInsights />
