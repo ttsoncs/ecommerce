@@ -20,17 +20,17 @@ export const metadata = {
 const wotfard = localFont({
   src: [
     {
-      path: "../../public/fonts/Circular-Book.woff2",
+      path: "../../public/fonts/wotfard-regular-webfont.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Circular-Medium.woff2",
+      path: "../../public/fonts/wotfard-medium-webfont.woff2",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../../public/fonts/Circular-Bold.woff2",
+      path: "../../public/fonts/wotfard-semibold-webfont.woff2",
       weight: "600",
       style: "normal",
     },
