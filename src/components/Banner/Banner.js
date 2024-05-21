@@ -5,14 +5,21 @@ import styled from "styled-components";
 import { createPortal } from "react-dom";
 
 function Banner() {
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <>
-      {createPortal(
-        <Wrapper>
-          <Text>Welcome! Portfolio Under Development.</Text>
-        </Wrapper>,
-        document.body
-      )}
+      {mounted &&
+        createPortal(
+          <Wrapper>
+            <Text>Welcome! Portfolio Under Development.</Text>
+          </Wrapper>,
+          document.body
+        )}
     </>
   );
 }
