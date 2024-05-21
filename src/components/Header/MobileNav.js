@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 
 import MobileLinks from "./MobileLinks";
 import { QUERIES } from "@/constants";
@@ -20,7 +20,8 @@ const variants = {
 
     transition: {
       opacity: {
-        duration: 0.4,
+        duration: 0.25,
+        ease: "easeIn",
       },
     },
   },
