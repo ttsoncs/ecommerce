@@ -16,7 +16,7 @@ const variants = {
     },
   },
   hidden: {
-    opacity: 0,
+    opacity: 1,
 
     transition: {
       opacity: {
