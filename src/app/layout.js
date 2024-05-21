@@ -55,8 +55,8 @@ export default function RootLayout({ children }) {
       </head>
       <StyledComponentsRegistry>
         <AppBackground>
+          <Banner />
           <MaxWidthWrapper>
-            <Banner />
             <Header />
             <Hero />
             {children}

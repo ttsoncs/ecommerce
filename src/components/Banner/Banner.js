@@ -4,23 +4,11 @@ import React from "react";
 import styled from "styled-components";
 import { createPortal } from "react-dom";
 
-function Banner() {
-  const [mounted, setMounted] = React.useState(false);
-
-  React.useEffect(() => {
-    setMounted(true);
-  }, []);
-
+function Banner({ children }) {
   return (
-    <>
-      {mounted &&
-        createPortal(
-          <Wrapper>
-            <Text>Welcome! Portfolio Under Development.</Text>
-          </Wrapper>,
-          document.body
-        )}
-    </>
+    <Wrapper>
+      <Text>Welcome! Portfolio Under Development.</Text>
+    </Wrapper>
   );
 }
 
