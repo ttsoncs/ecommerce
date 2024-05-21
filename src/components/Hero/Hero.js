@@ -11,6 +11,7 @@ function Hero() {
     <MaxWidthWrapper>
       <Wrapper>
         <NameBadge>
+          <Holder />
           <NameWrapper>
             <Name>Trinh The Son</Name>
             <Nickname>Captain Teemo</Nickname>
@@ -72,6 +73,21 @@ const NameBadge = styled.section`
   background-color: var(--color-background-card);
 
   overflow: hidden;
+`;
+
+const Holder = styled.div`
+  position: absolute;
+
+  align-self: center;
+
+  width: 25%;
+  height: 2.5%;
+
+  margin-top: var(--space-card);
+
+  border-radius: 10px;
+
+  background-color: white;
 `;
 
 const NameWrapper = styled.div`
