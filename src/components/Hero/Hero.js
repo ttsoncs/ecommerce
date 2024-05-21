@@ -122,8 +122,10 @@ const ImageWrapper = styled.div`
   width: 192px;
   height: 192px;
 
-  border-radius: 50%;
-  border: 1px solid var(--color-background-badge);
+  /* border-radius: 50%; */
+  /* border: 1px solid var(--color-background-badge); */
+
+  clip-path: circle(50%);
 
   background-color: var(--color-background-badge);
 
