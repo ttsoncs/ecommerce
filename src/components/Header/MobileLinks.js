@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import React from "react";
 import styled from "styled-components";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
 
@@ -11,30 +11,28 @@ import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 
 const variants = {
   visible: {
-    opacity: 1,
+    opacity: [0, 1, 1],
     y: 64,
+    filter: "blur(0px)",
 
     transition: {
       opacity: {
-        duration: 0.25,
+        duration: 0.5,
+      },
+      filter: {
+        duration: 0.5,
       },
       y: {
-        duration: 0.25,
+        type: "spring",
+        stiffness: 140,
+        damping: 20,
       },
     },
   },
   hidden: {
     opacity: 0,
-    y: "calc(64px + 50%)",
-
-    transition: {
-      opacity: {
-        duration: 0.25,
-      },
-      y: {
-        duration: 0.25,
-      },
-    },
+    y: 0,
+    filter: "blur(5px)",
   },
 };
 
@@ -48,9 +46,9 @@ function MobileLinks({ handleClose }) {
       {NAV_LINKS.map(({ title, href }, index) => (
         <MotionLinkWrapper
           variants={variants}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
+          initial={"hidden"}
+          animate={"visible"}
+          layout="position"
           href={href}
           key={index}
           onClick={handleClose}
