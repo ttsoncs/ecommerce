@@ -1,14 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import MobileLinks from "./MobileLinks";
 import { QUERIES } from "@/constants";
 
 const variants = {
   visible: {
-    // opacity: 1,
-    y: 0,
+    opacity: 1,
 
     transition: {
       opacity: {
@@ -17,48 +16,31 @@ const variants = {
     },
   },
   hidden: {
-    // opacity: 0,
-    y: "-100%",
+    opacity: 0,
 
     transition: {
       opacity: {
-        duration: 0.3,
+        duration: 0.25,
       },
     },
   },
 };
 
-const visibleStyle = {
-  inset: 0,
-};
-
-const hiddenStyle = {
-  inset: 0,
-
-  // width: "var(--size-toggle)",
-  // height: "var(--size-toggle)",
-
-  // right: "var(--space-header)",
-};
-
 function MobileNav({ isModalOpen, handleClose }) {
   return (
-    <Modal
-      variants={variants}
-      initial="hidden"
-      animate={isModalOpen ? "visible" : "hidden"}
-      transition={{
-        layout: {
-          ease: [0.32, 0.72, 0, 1],
-          duration: 0.5,
-        },
-      }}
-      layout={true}
-      onClick={handleClose}
-      style={isModalOpen ? visibleStyle : hiddenStyle}
-    >
-      {/* {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>} */}
-    </Modal>
+    <AnimatePresence>
+      {isModalOpen && (
+        <Modal
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          onClick={handleClose}
+        >
+          <MobileLinks handleClose={handleClose}></MobileLinks>
+        </Modal>
+      )}
+    </AnimatePresence>
   );
 }
 
@@ -70,6 +52,7 @@ const Modal = styled(motion.nav)`
     flex-direction: column;
 
     position: fixed;
+    inset: 0;
 
     background-color: var(--color-background-nav);
   }
