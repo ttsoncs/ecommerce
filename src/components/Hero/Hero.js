@@ -90,7 +90,7 @@ const Name = styled.p`
 `;
 
 const Nickname = styled.p`
-  font-size: 19px;
+  font-size: 17px;
   font-weight: var(--font-weight-regular);
 
   color: var(--color-secondary-text);
