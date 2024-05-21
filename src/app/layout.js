@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
             <Header />
             <Hero />
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </MaxWidthWrapper>
           <Analytics />
           <SpeedInsights />
