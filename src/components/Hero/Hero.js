@@ -130,6 +130,13 @@ const ImageWrapper = styled.div`
   background-color: var(--color-background-badge);
 
   overflow: hidden;
+
+  background-image: radial-gradient(
+    var(--color-secondary-text) 1px,
+    var(--color-background-badge) 1px
+  );
+  background-size: 14px 14px;
+  background-position: center;
 `;
 
 export default Hero;
