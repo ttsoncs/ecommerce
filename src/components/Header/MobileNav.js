@@ -16,13 +16,16 @@ const variants = {
     },
   },
   hidden: {
-    opacity: 0,
+    opacity: [1, 0],
 
     transition: {
       opacity: {
         duration: 0.5,
       },
     },
+  },
+  initial: {
+    opacity: 0,
   },
 };
 
@@ -41,7 +44,7 @@ function MobileNav({ isModalOpen, handleClose }) {
   return (
     <Modal
       variants={variants}
-      initial="hidden"
+      initial="initial"
       animate={isModalOpen ? "visible" : "hidden"}
       transition={{
         layout: {

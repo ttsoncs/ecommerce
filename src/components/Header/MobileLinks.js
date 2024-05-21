@@ -46,8 +46,8 @@ function MobileLinks({ handleClose }) {
       {NAV_LINKS.map(({ title, href }, index) => (
         <MotionLinkWrapper
           variants={variants}
-          initial={"hidden"}
-          animate={"visible"}
+          initial="hidden"
+          animate="visible"
           layout="position"
           href={href}
           key={index}
