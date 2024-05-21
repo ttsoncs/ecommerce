@@ -31,7 +31,7 @@ function Logo({ handleClose, size }) {
 const StyledLink = styled(Link)`
   display: flex;
   align-items: baseline;
-  gap: 4px;
+  gap: 8px;
 
   font-size: 24px;
   font-weight: var(--font-weight-semibold);
