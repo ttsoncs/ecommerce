@@ -87,7 +87,7 @@ const Holder = styled.div`
 
   border-radius: 10px;
 
-  background-color: white;
+  background-color: var(--color-border);
 `;
 
 const NameWrapper = styled.div`
