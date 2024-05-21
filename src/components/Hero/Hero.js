@@ -24,6 +24,7 @@ function Hero() {
                 priority={true}
                 style={{
                   transform: "scale(1.3)",
+                  clipPath: "circle(50%)",
                 }}
               />
             </ImageWrapper>
