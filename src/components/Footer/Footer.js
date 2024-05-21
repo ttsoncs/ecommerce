@@ -44,7 +44,7 @@ const Text = styled.p`
 const Highlight = styled.strong`
   font-weight: var(--font-weight-semibold);
 
-  color: var(--color-secondary);
+  color: var(--color-primary);
 `;
 
 export default Footer;
