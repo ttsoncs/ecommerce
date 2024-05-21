@@ -53,7 +53,7 @@ function MobileNav({ isModalOpen, handleClose }) {
       onClick={handleClose}
       style={isModalOpen ? visibleStyle : hiddenStyle}
     >
-      {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
+      {/* {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>} */}
     </Modal>
   );
 }
