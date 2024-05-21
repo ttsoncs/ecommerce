@@ -11,6 +11,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import Banner from "@/components/Banner";
 
 export const metadata = {
   title: "Trinh The Son",
@@ -55,10 +56,11 @@ export default function RootLayout({ children }) {
       <StyledComponentsRegistry>
         <AppBackground>
           <MaxWidthWrapper>
+            <Banner />
             <Header />
             <Hero />
             {children}
-            <Footer/>
+            <Footer />
           </MaxWidthWrapper>
           <Analytics />
           <SpeedInsights />

@@ -11,8 +11,7 @@ function Footer() {
     <Wrapper>
       <Text>© 2024 Trinh The Son. All rights reserved.</Text>
       <Text>
-        Enjoy the rest of your{" "}
-        <Highlight>{DAYS[new Date().getDay()]}!</Highlight>
+        Enjoy the rest of your {DAYS[new Date().getDay()]}!
       </Text>
     </Wrapper>
   );
@@ -39,12 +38,6 @@ const Wrapper = styled.footer`
 
 const Text = styled.p`
   text-align: center;
-`;
-
-const Highlight = styled.strong`
-  font-weight: var(--font-weight-semibold);
-
-  color: var(--color-primary);
 `;
 
 export default Footer;

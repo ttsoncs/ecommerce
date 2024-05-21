@@ -14,7 +14,7 @@ function Hero() {
           <Holder />
           <NameWrapper>
             <Name>Trinh The Son</Name>
-            <Nickname>Captain Teemo</Nickname>
+            <Nickname>Asshole</Nickname>
           </NameWrapper>
           <DotBackground>
             <ImageWrapper>
