@@ -12,8 +12,8 @@ function Hero() {
       <Wrapper>
         <NameBadge>
           <NameWrapper>
-            <Company>Apple</Company>
             <Name>Trinh The Son</Name>
+            <Nickname>Terminator</Nickname>
           </NameWrapper>
           <DotBackground>
             <ImageWrapper>
@@ -77,7 +77,7 @@ const NameBadge = styled.section`
 const NameWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 
   flex: 1;
@@ -90,13 +90,11 @@ const Name = styled.p`
   color: var(--color-primary-text);
 `;
 
-const Company = styled.p`
-  font-size: 19px;
-  font-weight: var(--font-weight-semibold);
+const Nickname = styled.p`
+  font-size: 17px;
+  font-weight: var(--font-weight-regular);
 
-  margin-top: 28px;
-
-  color: var(--color-primary-text);
+  color: var(--color-secondary-text);
 `;
 
 const DotBackground = styled.div`
@@ -130,13 +128,6 @@ const ImageWrapper = styled.div`
   background-color: var(--color-background-badge);
 
   overflow: hidden;
-
-  background-image: radial-gradient(
-    var(--color-secondary-text) 1px,
-    var(--color-background-badge) 1px
-  );
-  background-size: 14px 14px;
-  background-position: center;
 `;
 
 export default Hero;
