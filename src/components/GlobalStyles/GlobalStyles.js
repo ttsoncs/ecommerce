@@ -48,8 +48,7 @@ const GlobalStyles = createGlobalStyle`
     --color-background-badge: ${COLORS.white};
     --color-border: ${COLORS.gray[900]};
     --color-primary: ${COLORS.green};
-
-
+    --color-secondary: ${COLORS.orange};
 
     --font-weight-normal: ${FONT_WEIGHTS.regular};
     --font-weight-medium: ${FONT_WEIGHTS.medium};

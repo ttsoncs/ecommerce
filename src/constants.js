@@ -7,6 +7,7 @@ export const COLORS = {
   },
   black: "hsl(0deg 0% 0%)",
   green: "hsl(145deg 95% 40%)",
+  orange: "hsl(24deg 100% 50%)",
 };
 
 export const FONT_WEIGHTS = {
