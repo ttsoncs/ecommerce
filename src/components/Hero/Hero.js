@@ -13,7 +13,7 @@ function Hero() {
         <NameBadge>
           <NameWrapper>
             <Name>Trinh The Son</Name>
-            <Nickname>Terminator</Nickname>
+            <Nickname>Captain Teemo</Nickname>
           </NameWrapper>
           <DotBackground>
             <ImageWrapper>
