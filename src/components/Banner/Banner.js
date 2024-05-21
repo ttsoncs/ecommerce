@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { createPortal } from "react-dom";
 
-function Banner({ children }) {
+function Banner() {
   return (
     <>
       {createPortal(
