@@ -10,7 +10,7 @@ function Logo({ handleClose, size }) {
       href="/"
       onClick={handleClose}
     >
-      <ImageWrapper
+      {/* <ImageWrapper
         style={{
           "--width": `${size}px`,
           "--height": `${size}px`,
@@ -22,8 +22,8 @@ function Logo({ handleClose, size }) {
           alt="About page"
           priority={true}
         />
-      </ImageWrapper>
-      Son
+      </ImageWrapper> */}
+      ttson
     </StyledLink>
   );
 }
