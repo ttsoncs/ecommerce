@@ -59,9 +59,8 @@ const GlobalStyles = createGlobalStyle`
     --font-weight-semibold: ${FONT_WEIGHTS.semibold};
     --font-weight-bold: ${FONT_WEIGHTS.bold};
 
-    --space-header: 28px;
-    --space-card: 28px;
     --space: 16px;
+    --space-card: 28px;
     
     --size-toggle: 32px;
 

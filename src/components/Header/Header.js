@@ -65,7 +65,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  margin-inline: var(--space-header);
+  margin-inline: var(--space);
 
   @media ${QUERIES.phoneAndSmaller} {
     align-items: center;
