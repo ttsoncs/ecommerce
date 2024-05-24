@@ -25,6 +25,10 @@ function Header() {
   return (
     <MaxWidthWrapper>
       <Wrapper>
+        <Toggle
+          isModalOpen={isModalOpen}
+          handelToggle={handelToggle}
+        />
         <DesktopNavLeft />
         <Logo handleClose={handleClose} />
         <Toggle
