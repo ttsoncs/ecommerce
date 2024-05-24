@@ -3,6 +3,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { QUERIES } from "@/constants";
+
 function Banner({ children }) {
   return (
     <Wrapper>
@@ -13,13 +15,20 @@ function Banner({ children }) {
 
 const Wrapper = styled.aside`
   display: grid;
-  place-content: center;
+  align-items: center;
+  justify-content: center;
+
   position: sticky;
   top: 0;
 
   height: 32px;
 
   background-color: black;
+  overflow: auto;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    justify-content: start;
+  }
 `;
 
 const Text = styled.p`
@@ -33,7 +42,6 @@ const Text = styled.p`
   margin-inline: 16px;
 
   white-space: nowrap;
-  overflow: auto;
 `;
 
 export default Banner;
