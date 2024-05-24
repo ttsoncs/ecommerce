@@ -55,8 +55,8 @@ function MobileLinks({ handleClose }) {
           style={{
             "--color-active":
               pathname === href
-                ? "var(--color-primary-text)"
-                : "var(--color-secondary-text)",
+                ? "var(--color-black-text)"
+                : "var(--color-gray-text)",
           }}
         >
           {title}

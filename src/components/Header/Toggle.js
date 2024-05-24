@@ -49,9 +49,9 @@ const Wrapper = styled.button`
 const Bar = styled.div`
   position: absolute;
 
-  background: var(--color-primary-text);
+  background: var(--color-black-text);
   width: 14px;
-  height: 1.5px;
+  height: 2px;
 
   transition: transform 0.25s cubic-bezier(0.77, 0, 0.175, 1);
 `;

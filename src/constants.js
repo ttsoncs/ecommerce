@@ -1,7 +1,10 @@
 export const COLORS = {
   white: "hsl(0deg 0% 100%)",
   gray: {
-    500: "hsl(0deg 0% 58%)",
+    500: "hsl(0deg 0% 54%)",
+    600: "hsl(0deg 0% 44%)",
+    700: "hsl(0deg 0% 34%)",
+    800: "hsl(0deg 0% 24%)",
     900: "hsl(0deg 0% 14%)",
     1000: "hsl(0deg 0% 4%)",
   },

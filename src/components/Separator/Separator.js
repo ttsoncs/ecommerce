@@ -9,7 +9,7 @@ function Separator() {
 
 const Wrapper = styled.span`
   margin-inline: 8px;
-  color: var(--color-secondary-text);
+  color: var(--color-separator);
 `;
 
 export default Separator;

@@ -40,8 +40,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    --color-primary-text: ${COLORS.black};
-    --color-secondary-text: ${COLORS.gray[500]};
+    --color-black-text: ${COLORS.black};
+    --color-white-text: ${COLORS.white};
+    --color-gray-text: ${COLORS.gray[500]};
+    --color-separator: ${COLORS.gray[700]};
     --color-background: ${COLORS.white};
     --color-background-nav: ${COLORS.gray[1000]};
     --color-background-card: ${COLORS.gray[1000]};
