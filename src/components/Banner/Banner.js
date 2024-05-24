@@ -19,16 +19,18 @@ const Wrapper = styled.aside`
 
   height: 32px;
 
-  background-color: white;
+  background-color: black;
 `;
 
 const Text = styled.p`
-  color: black;
+  color: white;
 
-  font-size: 15px;
+  font-size: 14px;
   font-weight: var(--font-weight-medium);
 
   text-align: center;
+
+  margin-inline: 16px;
 
   white-space: nowrap;
   overflow: auto;

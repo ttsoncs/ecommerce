@@ -40,9 +40,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    --color-primary-text: ${COLORS.white};
+    --color-primary-text: ${COLORS.black};
     --color-secondary-text: ${COLORS.gray[500]};
-    --color-background: ${COLORS.black};
+    --color-background: ${COLORS.white};
     --color-background-nav: ${COLORS.gray[1000]};
     --color-background-card: ${COLORS.gray[1000]};
     --color-background-badge: ${COLORS.white};

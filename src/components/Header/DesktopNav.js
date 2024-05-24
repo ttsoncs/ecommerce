@@ -8,7 +8,7 @@ import { QUERIES } from "@/constants";
 function DesktopNav() {
   return (
     <Wrapper>
-      <DesktopLinks />
+      {/* <DesktopLinks /> */}
     </Wrapper>
   );
 }

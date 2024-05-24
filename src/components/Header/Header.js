@@ -24,6 +24,7 @@ function Header() {
   return (
     <MaxWidthWrapper>
       <Wrapper>
+        <DesktopNav />
         <Logo
           handleClose={handleClose}
           size={20}
@@ -54,10 +55,6 @@ const MaxWidthWrapper = styled.header`
   height: var(--height-header);
 
   background-color: var(--color-background);
-
-  @media ${QUERIES.phoneAndSmaller} {
-    border-bottom: 1px solid var(--color-border);
-  }
 `;
 
 const Wrapper = styled.div`

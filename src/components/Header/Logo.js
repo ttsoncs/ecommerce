@@ -23,7 +23,7 @@ function Logo({ handleClose, size }) {
           priority={true}
         />
       </ImageWrapper> */}
-      ttson
+      mishmash&#174;
     </StyledLink>
   );
 }
