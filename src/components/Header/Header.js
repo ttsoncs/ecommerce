@@ -27,7 +27,6 @@ function Header() {
         <DesktopNav />
         <Logo
           handleClose={handleClose}
-          size={20}
         />
         <Toggle
           isModalOpen={isModalOpen}

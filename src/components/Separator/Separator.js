@@ -8,6 +8,9 @@ function Separator() {
 }
 
 const Wrapper = styled.span`
+  position: relative;
+  top: -1px;
+
   margin-inline: 8px;
   color: var(--color-separator);
 `;

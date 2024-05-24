@@ -4,25 +4,12 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
-function Logo({ handleClose, size }) {
+function Logo({ handleClose }) {
   return (
     <StyledLink
       href="/"
       onClick={handleClose}
     >
-      {/* <ImageWrapper
-        style={{
-          "--width": `${size}px`,
-          "--height": `${size}px`,
-        }}
-      >
-        <Image
-          src="/images/logo.svg"
-          fill={true}
-          alt="About page"
-          priority={true}
-        />
-      </ImageWrapper> */}
       mishmash&#174;
     </StyledLink>
   );
@@ -38,16 +25,6 @@ const StyledLink = styled(Link)`
 
   color: var(--color-black-text);
   text-decoration: none;
-`;
-
-const ImageWrapper = styled.div`
-  position: relative;
-  align-self: center;
-
-  width: var(--width);
-  height: var(--height);
-
-  transform: rotate(45deg);
 `;
 
 export default Logo;
