@@ -32,7 +32,7 @@ const Wrapper = styled.aside`
 `;
 
 const Text = styled.p`
-  color: var(--color-white-text);
+  color: var(--color-black-text);
 
   font-size: 14px;
   font-weight: var(--font-weight-medium);
