@@ -45,11 +45,12 @@ const GlobalStyles = createGlobalStyle`
     --color-gray-text: ${COLORS.gray[500]};
     --color-separator: ${COLORS.gray[700]};
     --color-background: ${COLORS.white};
+
     --color-background-nav: ${COLORS.gray[1000]};
     --color-background-card: ${COLORS.gray[1000]};
     --color-background-badge: ${COLORS.white};
     --color-border: ${COLORS.gray[900]};
-    --color-primary: ${COLORS.green};
+    --color-banner: ${COLORS.green};
     --color-secondary: ${COLORS.orange};
 
     --font-weight-normal: ${FONT_WEIGHTS.regular};
