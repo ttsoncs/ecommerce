@@ -1,8 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import React from "react";
 import styled from "styled-components";
+
+import { QUERIES } from "@/constants";
 
 function Logo({ handleClose }) {
   return (
@@ -18,13 +19,22 @@ function Logo({ handleClose }) {
 const StyledLink = styled(Link)`
   display: flex;
   align-items: baseline;
-  gap: 8px;
 
-  font-size: 24px;
+  font-size: 28px;
   font-weight: var(--font-weight-semibold);
 
   color: var(--color-black-text);
   text-decoration: none;
+
+  transition: color 200ms ease;
+
+  &:hover {
+    color: var(--color-hover);
+  }
+
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: 24px;
+  }
 `;
 
 export default Logo;

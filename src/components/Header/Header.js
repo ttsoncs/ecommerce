@@ -3,7 +3,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import DesktopNav from "./DesktopNav";
+import DesktopNavLeft from "./DesktopNavLeft";
+import DesktopNavRight from "./DesktopNavRight";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
 import Toggle from "./Toggle";
@@ -24,15 +25,13 @@ function Header() {
   return (
     <MaxWidthWrapper>
       <Wrapper>
-        <DesktopNav />
-        <Logo
-          handleClose={handleClose}
-        />
+        <DesktopNavLeft />
+        <Logo handleClose={handleClose} />
         <Toggle
           isModalOpen={isModalOpen}
           handelToggle={handelToggle}
         />
-        <DesktopNav />
+        <DesktopNavRight />
         <MobileNav
           isModalOpen={isModalOpen}
           handleClose={handleClose}
@@ -58,7 +57,7 @@ const MaxWidthWrapper = styled.header`
 
 const Wrapper = styled.div`
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 
   width: 100%;

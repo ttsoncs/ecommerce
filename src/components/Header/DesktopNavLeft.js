@@ -1,25 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
-import DesktopLinks from "./DesktopLinks";
+import DesktopLinksLeft from "./DesktopLinksLeft";
 
 import { QUERIES } from "@/constants";
 
-function DesktopNav() {
+function DesktopNavLeft() {
   return (
     <Wrapper>
-      {/* <DesktopLinks /> */}
+      <DesktopLinksLeft />
     </Wrapper>
   );
 }
 
 const Wrapper = styled.nav`
   display: flex;
-  gap: 40px;
+  gap: 48px;
 
   @media ${QUERIES.phoneAndSmaller} {
     display: none;
   }
 `;
 
-export default DesktopNav;
+export default DesktopNavLeft;
