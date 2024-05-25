@@ -47,7 +47,6 @@ const GlobalStyles = createGlobalStyle`
     --color-background: ${COLORS.white};
     --color-hover: ${COLORS.gray[700]};
 
-    --color-background-nav: ${COLORS.gray[1000]};
     --color-background-card: ${COLORS.gray[1000]};
     --color-background-badge: ${COLORS.white};
     --color-border: ${COLORS.gray[900]};
@@ -65,6 +64,7 @@ const GlobalStyles = createGlobalStyle`
     --size-toggle: 32px;
 
     --height-header: 64px;
+    --height-banner: 32px;
   }
 `;
 

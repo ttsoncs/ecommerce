@@ -21,7 +21,7 @@ const Wrapper = styled.aside`
   position: sticky;
   top: 0;
 
-  height: 32px;
+  height: var(--height-banner);
 
   background-color: var(--color-banner);
   overflow: auto;

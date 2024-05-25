@@ -54,7 +54,7 @@ function MobileNav({ isModalOpen, handleClose }) {
       onClick={handleClose}
       style={isModalOpen ? visibleStyle : hiddenStyle}
     >
-      {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>}
+      {/* {isModalOpen && <MobileLinks handleClose={handleClose}></MobileLinks>} */}
     </Modal>
   );
 }
@@ -68,7 +68,7 @@ const Modal = styled(motion.nav)`
 
     position: fixed;
 
-    background-color: var(--color-background-nav);
+    background-color: var(--color-background);
   }
 `;
 
