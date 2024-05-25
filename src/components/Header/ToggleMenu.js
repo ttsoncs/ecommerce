@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { QUERIES } from "@/constants";
 
-function Toggle({ isModalOpen, handelToggle }) {
+function ToggleMenu({ isModalOpen, handelToggle }) {
   return (
     <Wrapper
       type="button"
@@ -64,4 +64,4 @@ const BottomBar = styled(Bar)`
   transform: var(--transform-toggle);
 `;
 
-export default Toggle;
+export default ToggleMenu;

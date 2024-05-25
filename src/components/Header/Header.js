@@ -7,9 +7,10 @@ import DesktopNavLeft from "./DesktopNavLeft";
 import DesktopNavRight from "./DesktopNavRight";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
-import Toggle from "./Toggle";
+import ToggleMenu from "./ToggleMenu";
 
 import { QUERIES } from "@/constants";
+import ToggleSearch from "./ToggleSearch";
 
 function Header() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
@@ -25,13 +26,13 @@ function Header() {
   return (
     <MaxWidthWrapper>
       <Wrapper>
-        <Toggle
+        <ToggleSearch
           isModalOpen={isModalOpen}
           handelToggle={handelToggle}
         />
         <DesktopNavLeft />
         <Logo handleClose={handleClose} />
-        <Toggle
+        <ToggleMenu
           isModalOpen={isModalOpen}
           handelToggle={handelToggle}
         />
