@@ -7,8 +7,6 @@ import { motion } from "framer-motion";
 
 import { NAV_LINKS } from "@/constants";
 
-import useLockBodyScroll from "@/hooks/useLockBodyScroll";
-
 const variants = {
   visible: {
     opacity: [0, 1, 1],
@@ -38,8 +36,6 @@ const variants = {
 
 function MobileLinks({ handleClose }) {
   const pathname = usePathname();
-
-  useLockBodyScroll();
 
   return (
     <>

@@ -5,6 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import MobileLinks from "./MobileLinks";
 import { QUERIES } from "@/constants";
 
+import useLockBodyScroll from "@/hooks/useLockBodyScroll";
+
+
 const variants = {
   visible: {
     y: 0,
@@ -29,6 +32,8 @@ const variants = {
 };
 
 function MobileNav({ isModalOpen, handleClose }) {
+  useLockBodyScroll();
+
   return (
     <AnimatePresence>
       {isModalOpen && (
