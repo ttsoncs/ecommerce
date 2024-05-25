@@ -35,7 +35,6 @@ const Wrapper = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 
     background-color: transparent;
     border: none;

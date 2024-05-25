@@ -46,10 +46,11 @@ const GlobalStyles = createGlobalStyle`
     --color-separator: ${COLORS.gray[700]};
     --color-background: ${COLORS.white};
     --color-hover: ${COLORS.gray[700]};
+    --color-banner: ${COLORS.green};
+    --color-modal: ${COLORS.green};
 
     --color-background-badge: ${COLORS.white};
     --color-border: ${COLORS.gray[900]};
-    --color-banner: ${COLORS.green};
     --color-secondary: ${COLORS.orange};
 
     --font-weight-normal: ${FONT_WEIGHTS.regular};
