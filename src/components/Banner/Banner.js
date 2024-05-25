@@ -20,6 +20,7 @@ const Wrapper = styled.aside`
 
   position: sticky;
   top: 0;
+  z-index: 2;
 
   height: var(--height-banner);
 
