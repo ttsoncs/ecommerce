@@ -33,8 +33,9 @@ const Wrapper = styled.button`
 
   @media ${QUERIES.phoneAndSmaller} {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex: 1;
 
     background-color: transparent;
     border: none;

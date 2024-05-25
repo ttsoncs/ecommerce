@@ -14,6 +14,7 @@ function DesktopNavLeft() {
 
 const Wrapper = styled.nav`
   display: flex;
+  flex: 1;
   gap: 48px;
 
   @media ${QUERIES.phoneAndSmaller} {

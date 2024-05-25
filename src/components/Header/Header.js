@@ -7,9 +7,8 @@ import DesktopNavLeft from "./DesktopNavLeft";
 import DesktopNavRight from "./DesktopNavRight";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
-import ToggleMenu from "./ToggleMenu";
+import MobileNavRight from "./MobileNavRight";
 
-import { QUERIES } from "@/constants";
 import ToggleSearch from "./ToggleSearch";
 
 function Header() {
@@ -32,11 +31,11 @@ function Header() {
         />
         <DesktopNavLeft />
         <Logo handleClose={handleClose} />
-        <ToggleMenu
+        <DesktopNavRight />
+        <MobileNavRight
           isModalOpen={isModalOpen}
           handelToggle={handelToggle}
         />
-        <DesktopNavRight />
         <MobileNav
           isModalOpen={isModalOpen}
           handleClose={handleClose}
@@ -62,15 +61,9 @@ const MaxWidthWrapper = styled.header`
 
 const Wrapper = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   width: 100%;
   margin-inline: var(--space);
-
-  @media ${QUERIES.phoneAndSmaller} {
-    align-items: center;
-  }
 `;
 
 export default Header;

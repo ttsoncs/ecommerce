@@ -30,8 +30,8 @@ function DesktopNavRight() {
 
 const Wrapper = styled.nav`
   display: flex;
-  align-items: center;
-
+  justify-content: flex-end;
+  flex: 1;
   gap: 64px;
 
   @media ${QUERIES.phoneAndSmaller} {

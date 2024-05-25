@@ -18,7 +18,7 @@ function Logo({ handleClose }) {
 
 const StyledLink = styled(Link)`
   display: flex;
-  align-items: baseline;
+  flex: 0;
 
   font-size: 28px;
   font-weight: var(--font-weight-semibold);
