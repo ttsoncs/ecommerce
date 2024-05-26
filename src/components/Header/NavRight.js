@@ -16,14 +16,10 @@ function MobileNavRight({ ...delegated }) {
 }
 
 const Wrapper = styled.nav`
-  display: none;
-
-  @media ${QUERIES.phoneAndSmaller} {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-    gap: 16px;
-  }
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 16px;
 `;
 
 export default MobileNavRight;

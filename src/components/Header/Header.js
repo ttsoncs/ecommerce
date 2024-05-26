@@ -3,12 +3,10 @@
 import React from "react";
 import styled from "styled-components";
 
-import DesktopNavLeft from "./DesktopNavLeft";
-import DesktopNavRight from "./DesktopNavRight";
 import Logo from "./Logo";
-import MobileNav from "./MobileNav";
-import MobileNavLeft from "./MobileNavLeft";
-import MobileNavRight from "./MobileNavRight";
+import Modal from "./Modal";
+import NavLeft from "./NavLeft";
+import NavRight from "./NavRight";
 
 function Header() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
@@ -24,24 +22,16 @@ function Header() {
   return (
     <MaxWidthWrapper>
       <Wrapper>
-        <MobileNavLeft
-          isModalOpen={isModalOpen}
-          handelToggle={handelToggle}
-        />
-        <DesktopNavLeft
+        <NavLeft
           isModalOpen={isModalOpen}
           handelToggle={handelToggle}
         />
         <Logo handleClose={handleClose} />
-        <DesktopNavRight
+        <NavRight
           isModalOpen={isModalOpen}
           handelToggle={handelToggle}
         />
-        <MobileNavRight
-          isModalOpen={isModalOpen}
-          handelToggle={handelToggle}
-        />
-        <MobileNav
+        <Modal
           isModalOpen={isModalOpen}
           handleClose={handleClose}
         />

@@ -14,14 +14,10 @@ function MobileNavLeft({ ...delegated }) {
 }
 
 const Wrapper = styled.nav`
-  display: none;
-
-  @media ${QUERIES.phoneAndSmaller} {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    gap: 16px;
-  }
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 16px;
 `;
 
 export default MobileNavLeft;
