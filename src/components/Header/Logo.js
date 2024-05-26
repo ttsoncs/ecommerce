@@ -19,6 +19,7 @@ function Logo({ handleClose }) {
 const StyledLink = styled(Link)`
   display: flex;
   flex: 0;
+  z-index: 1;
 
   font-size: 28px;
   font-weight: var(--font-weight-semibold);
@@ -33,6 +34,8 @@ const StyledLink = styled(Link)`
   }
 
   @media ${QUERIES.phoneAndSmaller} {
+    z-index: 0;
+
     font-size: 24px;
   }
 `;

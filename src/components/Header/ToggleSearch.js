@@ -30,6 +30,8 @@ function ToggleSearch({ isModalOpen, handelToggle }) {
 }
 
 const Wrapper = styled.button`
+  z-index: 1;
+  
   background-color: transparent;
   border: none;
   padding: 0;
@@ -45,6 +47,7 @@ const Wrapper = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 
     width: var(--size-toggle);
     height: var(--size-toggle);
@@ -56,6 +59,7 @@ const ImageWrapper = styled.div`
 
   @media ${QUERIES.phoneAndSmaller} {
     display: revert;
+    
     position: relative;
 
     width: var(--width);

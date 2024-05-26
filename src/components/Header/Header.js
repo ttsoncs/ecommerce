@@ -10,8 +10,6 @@ import MobileNav from "./MobileNav";
 import MobileNavLeft from "./MobileNavLeft";
 import MobileNavRight from "./MobileNavRight";
 
-import ToggleSearch from "./ToggleSearch";
-
 function Header() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
 
