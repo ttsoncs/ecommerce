@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 import { QUERIES } from "@/constants";
 
-function ToggleShop({ isModalOpen, handelToggle }) {
+function ToggleSignin({ isModalOpen, handelToggle }) {
   return (
     <Wrapper
       type="button"
       onClick={handelToggle}
     >
-      Shop
+      Sign in
     </Wrapper>
   );
 }
@@ -38,4 +38,4 @@ const Wrapper = styled.button`
   }
 `;
 
-export default ToggleShop;
+export default ToggleSignin;
