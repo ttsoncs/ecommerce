@@ -26,10 +26,10 @@ const StyledLink = styled(Link)`
   color: var(--color-black-text);
   text-decoration: none;
 
-  transition: color 200ms ease;
+  transition: opacity 200ms ease;
 
   &:hover {
-    color: var(--color-hover);
+    opacity: 0.6;
   }
 
   @media ${QUERIES.phoneAndSmaller} {

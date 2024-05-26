@@ -18,7 +18,7 @@ function ToggleCart({ isModalOpen, handelToggle }) {
         <Image
           src="/images/shopping-cart.svg"
           fill={true}
-          alt="About page"
+          alt="Shopping cart"
           priority={true}
         />
       </ImageWrapper>
@@ -38,6 +38,12 @@ const Wrapper = styled.button`
 
   width: var(--size-toggle);
   height: var(--size-toggle);
+
+  transition: opacity 200ms ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
 `;
 
 const ImageWrapper = styled.div`

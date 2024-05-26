@@ -7,6 +7,7 @@ import DesktopNavLeft from "./DesktopNavLeft";
 import DesktopNavRight from "./DesktopNavRight";
 import Logo from "./Logo";
 import MobileNav from "./MobileNav";
+import MobileNavLeft from "./MobileNavLeft";
 import MobileNavRight from "./MobileNavRight";
 
 import ToggleSearch from "./ToggleSearch";
@@ -25,13 +26,16 @@ function Header() {
   return (
     <MaxWidthWrapper>
       <Wrapper>
-        <ToggleSearch
+        <MobileNavLeft
           isModalOpen={isModalOpen}
           handelToggle={handelToggle}
         />
         <DesktopNavLeft />
         <Logo handleClose={handleClose} />
-        <DesktopNavRight />
+        <DesktopNavRight
+          isModalOpen={isModalOpen}
+          handelToggle={handelToggle}
+        />
         <MobileNavRight
           isModalOpen={isModalOpen}
           handelToggle={handelToggle}
@@ -61,6 +65,7 @@ const MaxWidthWrapper = styled.header`
 
 const Wrapper = styled.div`
   display: flex;
+  align-items: center;
 
   width: 100%;
   margin-inline: var(--space);

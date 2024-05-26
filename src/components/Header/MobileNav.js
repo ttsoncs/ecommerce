@@ -7,7 +7,6 @@ import { QUERIES } from "@/constants";
 
 import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 
-
 const variants = {
   visible: {
     y: 0,
@@ -58,17 +57,13 @@ function MobileNav({ isModalOpen, handleClose }) {
 }
 
 const Modal = styled(motion.nav)`
-  display: none;
+  display: flex;
+  flex-direction: column;
 
-  @media ${QUERIES.phoneAndSmaller} {
-    display: flex;
-    flex-direction: column;
+  position: fixed;
+  inset: 0;
 
-    position: fixed;
-    inset: 0;
-
-    background-color: var(--color-modal);
-  }
+  background-color: var(--color-modal);
 `;
 
 export default MobileNav;
