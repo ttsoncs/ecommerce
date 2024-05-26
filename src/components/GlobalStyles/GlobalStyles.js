@@ -1,6 +1,6 @@
 "use client";
 
-import { COLORS, FONT_WEIGHTS, FONT_SIZES } from "@/constants";
+import { COLORS, FONT_WEIGHTS } from "@/constants";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -62,7 +62,7 @@ const GlobalStyles = createGlobalStyle`
     
     --size-toggle: 32px;
 
-    --height-header: 64px;
+    --height-header: 72px;
     --height-banner: 32px;
   }
 `;
