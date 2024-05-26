@@ -24,11 +24,14 @@ function ToggleCart({ isModalOpen, handelToggle }) {
           priority={true}
         />
       </ImageWrapper>
+      <Quantity>3</Quantity>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.button`
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +42,6 @@ const Wrapper = styled.button`
   padding: 0;
   cursor: pointer;
 
-  width: var(--size-toggle);
   height: var(--size-toggle);
 
   transition: opacity 200ms ease;
@@ -58,6 +60,26 @@ const ImageWrapper = styled.div`
 
   width: var(--width);
   height: var(--height);
+`;
+
+const Quantity = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  padding-inline: 4px;
+
+  border: 2px solid var(--color-background);
+  border-radius: 16px;
+
+  margin-left: -4px;
+
+  color: var(--color-black-text);
+  background-color: var(--color-quantity);
+
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
 `;
 
 export default ToggleCart;
