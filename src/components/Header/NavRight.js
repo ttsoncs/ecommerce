@@ -4,9 +4,7 @@ import styled from "styled-components";
 import ToggleCart from "./ToggleCart";
 import ToggleMenu from "./ToggleMenu";
 
-import { QUERIES } from "@/constants";
-
-function MobileNavRight({ ...delegated }) {
+function NavRight({ ...delegated }) {
   return (
     <Wrapper>
       <ToggleCart {...delegated} />
@@ -22,4 +20,4 @@ const Wrapper = styled.nav`
   gap: 16px;
 `;
 
-export default MobileNavRight;
+export default NavRight;

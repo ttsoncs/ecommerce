@@ -3,9 +3,7 @@ import styled from "styled-components";
 
 import ToggleSearch from "./ToggleSearch";
 
-import { QUERIES } from "@/constants";
-
-function MobileNavLeft({ ...delegated }) {
+function NavLeft({ ...delegated }) {
   return (
     <Wrapper>
       <ToggleSearch {...delegated} />
@@ -20,4 +18,4 @@ const Wrapper = styled.nav`
   gap: 16px;
 `;
 
-export default MobileNavLeft;
+export default NavLeft;

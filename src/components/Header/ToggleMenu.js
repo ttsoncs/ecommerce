@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { QUERIES } from "@/constants";
+
 function ToggleMenu({ isModalOpen, handelToggle }) {
   return (
     <Wrapper
@@ -26,18 +28,22 @@ function ToggleMenu({ isModalOpen, handelToggle }) {
 }
 
 const Wrapper = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+  display: none;
+  
+  @media ${QUERIES.phoneAndSmaller} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 
-  width: var(--size-toggle);
-  height: var(--size-toggle);
+    width: var(--size-toggle);
+    height: var(--size-toggle);
+  }
 `;
 
 const Bar = styled.div`
