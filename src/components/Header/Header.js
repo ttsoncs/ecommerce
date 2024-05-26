@@ -30,7 +30,10 @@ function Header() {
           isModalOpen={isModalOpen}
           handelToggle={handelToggle}
         />
-        <DesktopNavLeft />
+        <DesktopNavLeft
+          isModalOpen={isModalOpen}
+          handelToggle={handelToggle}
+        />
         <Logo handleClose={handleClose} />
         <DesktopNavRight
           isModalOpen={isModalOpen}

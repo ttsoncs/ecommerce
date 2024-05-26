@@ -24,22 +24,27 @@ function ToggleSearch({ isModalOpen, handelToggle }) {
           priority={true}
         />
       </ImageWrapper>
+      <Text>Search</Text>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.button`
-  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  transition: opacity 200ms ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   @media ${QUERIES.phoneAndSmaller} {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
 
     width: var(--size-toggle);
     height: var(--size-toggle);
@@ -47,10 +52,26 @@ const Wrapper = styled.button`
 `;
 
 const ImageWrapper = styled.div`
-  position: relative;
+  display: none;
 
-  width: var(--width);
-  height: var(--height);
+  @media ${QUERIES.phoneAndSmaller} {
+    display: revert;
+    position: relative;
+
+    width: var(--width);
+    height: var(--height);
+  }
+`;
+
+const Text = styled.p`
+  color: var(--color-black-text);
+
+  font-size: 17px;
+  font-weight: var(--font-weight-medium);
+
+  @media ${QUERIES.phoneAndSmaller} {
+    display: none;
+  }
 `;
 
 export default ToggleSearch;

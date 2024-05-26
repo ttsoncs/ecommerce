@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
+import ToggleSearch from "./ToggleSearch";
+
 import { QUERIES } from "@/constants";
 
-function DesktopNavLeft() {
+function DesktopNavLeft({ ...delegated }) {
   return (
     <Wrapper>
       <Button type="button">Shop</Button>
-      <Button type="button">Search</Button>
+      <ToggleSearch {...delegated} />
     </Wrapper>
   );
 }

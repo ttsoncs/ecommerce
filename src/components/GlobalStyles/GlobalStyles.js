@@ -45,7 +45,6 @@ const GlobalStyles = createGlobalStyle`
     --color-gray-text: ${COLORS.gray[500]};
     --color-separator: ${COLORS.gray[700]};
     --color-background: ${COLORS.white};
-    --color-hover: ${COLORS.gray[700]};
     --color-banner: ${COLORS.green};
     --color-modal: ${COLORS.gray[100]};
 
