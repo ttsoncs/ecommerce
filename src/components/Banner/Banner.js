@@ -32,7 +32,7 @@ const Wrapper = styled.aside`
   }
 `;
 
-const Text = styled.span`
+const Text = styled.p`
   color: var(--color-black-text);
 
   font-size: 14px;
