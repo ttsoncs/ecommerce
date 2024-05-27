@@ -18,10 +18,11 @@ const Wrapper = styled.aside`
   align-items: center;
   justify-content: center;
 
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 2;
 
+  width: 100%;
   height: var(--height-banner);
 
   background-color: var(--color-banner);

@@ -21,7 +21,7 @@ const Wrapper = styled.main`
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 
-  margin-block: 24px;
+  margin-block: calc(24px + var(--height-banner));
   margin-inline: var(--space-laptop);
 
   @media ${QUERIES.phoneAndSmaller} {

@@ -10,7 +10,7 @@ export const COLORS = {
     1000: "hsl(0deg 0% 4%)",
   },
   black: "hsl(0deg 0% 0%)",
-  green: "hsl(163deg 44% 68%)",
+  green: "hsl(40deg 46% 88%)",
   orange: "hsl(24deg 100% 50%)",
   blue: "hsl(186deg 48% 61%)",
   purple: "hsl(271deg 26% 63%)",
