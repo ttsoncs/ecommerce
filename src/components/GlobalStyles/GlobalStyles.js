@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
     --color-gray-text: ${COLORS.gray[500]};
     --color-separator: ${COLORS.gray[700]};
     --color-background: ${COLORS.white};
-    --color-banner: ${COLORS.black};
+    --color-banner: ${COLORS.purple};
     --color-modal: ${COLORS.gray[100]};
     --color-quantity: ${COLORS.blue};
     --color-background-card: ${COLORS.blue};
