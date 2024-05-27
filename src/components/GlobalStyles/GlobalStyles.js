@@ -48,18 +48,19 @@ const GlobalStyles = createGlobalStyle`
     --color-banner: ${COLORS.black};
     --color-modal: ${COLORS.gray[100]};
     --color-quantity: ${COLORS.blue};
-    --color-background-card: ${COLORS.blue};
 
-    --color-border: ${COLORS.gray[900]};
-    --color-secondary: ${COLORS.orange};
+    --color-blue: ${COLORS.blue};
+    --color-purple: ${COLORS.purple};
+    --color-pink: ${COLORS.pink};
+    --color-green: ${COLORS.green};
 
     --font-weight-normal: ${FONT_WEIGHTS.regular};
     --font-weight-medium: ${FONT_WEIGHTS.medium};
     --font-weight-semibold: ${FONT_WEIGHTS.semibold};
     --font-weight-bold: ${FONT_WEIGHTS.bold};
 
-    --space: 16px;
-    --space-card: 28px;
+    --space-phone: 16px;
+    --space-laptop: 28px;
     
     --size-toggle: 32px;
 

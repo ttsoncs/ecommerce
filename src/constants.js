@@ -10,10 +10,11 @@ export const COLORS = {
     1000: "hsl(0deg 0% 4%)",
   },
   black: "hsl(0deg 0% 0%)",
-  green: "hsl(145deg 95% 40%)",
+  green: "hsl(163deg 44% 68%)",
   orange: "hsl(24deg 100% 50%)",
   blue: "hsl(186deg 48% 61%)",
   purple: "hsl(271deg 26% 63%)",
+  pink: "hsl(341deg 70% 92%)",
 };
 
 export const FONT_WEIGHTS = {
@@ -26,7 +27,7 @@ export const FONT_WEIGHTS = {
 export const BREAKPOINTS = {
   phoneMax: 640,
   tabletMax: 1024,
-  laptopMax: 1280,
+  laptopMax: 1536,
 };
 
 export const QUERIES = {

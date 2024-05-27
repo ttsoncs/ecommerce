@@ -14,7 +14,7 @@ function Banner({ children }) {
 }
 
 const Wrapper = styled.aside`
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
 

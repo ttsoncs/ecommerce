@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
 
 import MobileLinks from "./MobileLinks";
-import { QUERIES } from "@/constants";
 
 import useLockBodyScroll from "@/hooks/useLockBodyScroll";
 
@@ -31,7 +30,7 @@ const variants = {
 };
 
 function MobileNav({ isModalOpen, handleClose }) {
-  useLockBodyScroll();
+  // useLockBodyScroll();
 
   return (
     <AnimatePresence>

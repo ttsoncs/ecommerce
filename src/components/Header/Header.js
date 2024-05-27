@@ -61,11 +61,11 @@ const Wrapper = styled.div`
   align-items: center;
 
   width: 100%;
-  
-  margin-inline: 0px;
-  
+
+  margin-inline: var(--space-laptop);
+
   @media ${QUERIES.phoneAndSmaller} {
-    margin-inline: var(--space);
+    margin-inline: var(--space-phone);
   }
 `;
 
