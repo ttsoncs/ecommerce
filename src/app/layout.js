@@ -30,7 +30,7 @@ const wotfard = localFont({
       style: "normal",
     },
     {
-      path: "../../public/fonts/wotfard-semibold-webfont.woff2",
+      path: "../../public/fonts/BMDANIEL-Bold.woff2",
       weight: "600",
       style: "normal",
     },
