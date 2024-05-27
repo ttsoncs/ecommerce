@@ -9,10 +9,11 @@ function Quote() {
   return (
     <Wrapper>
       <Text>
-        We are Colafruits, obsessed with flavor and nature&#39;s finest. Our premium
-        fruits are hand-selected for perfection, offering a taste unlike any
-        other. Dive into a world of exquisite fruits, bursting with
-        deliciousness!
+        <Highlight>We are côlafruits</Highlight>, obsessed with{" "}
+        <Highlight>flavor</Highlight> and nature&#39;s finest. Our{" "}
+        <Highlight>premium fruits</Highlight> are hand-selected for perfection,
+        offering a taste unlike any other. Dive into a world of exquisite
+        fruits, bursting with <Highlight>deliciousness!</Highlight>
       </Text>
     </Wrapper>
   );
@@ -39,6 +40,12 @@ const Text = styled.span`
   @media ${QUERIES.phoneAndSmaller} {
     font-size: 32px;
   }
+`;
+
+const Highlight = styled.strong`
+  font-weight: var(--font-weight-bold);
+
+  color: var(--color-blue);
 `;
 
 export default Quote;
