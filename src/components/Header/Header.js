@@ -8,6 +8,8 @@ import Modal from "./Modal";
 import NavLeft from "./NavLeft";
 import NavRight from "./NavRight";
 
+import { QUERIES } from "@/constants";
+
 function Header() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
 
@@ -59,7 +61,12 @@ const Wrapper = styled.div`
   align-items: center;
 
   width: 100%;
-  margin-inline: var(--space);
+  
+  margin-inline: 0px;
+  
+  @media ${QUERIES.phoneAndSmaller} {
+    margin-inline: var(--space);
+  }
 `;
 
 export default Header;

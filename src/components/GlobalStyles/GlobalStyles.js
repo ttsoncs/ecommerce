@@ -48,8 +48,8 @@ const GlobalStyles = createGlobalStyle`
     --color-banner: ${COLORS.black};
     --color-modal: ${COLORS.gray[100]};
     --color-quantity: ${COLORS.blue};
+    --color-background-card: ${COLORS.blue};
 
-    --color-background-badge: ${COLORS.white};
     --color-border: ${COLORS.gray[900]};
     --color-secondary: ${COLORS.orange};
 
