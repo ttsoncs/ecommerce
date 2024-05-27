@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
     --color-pink: ${COLORS.pink};
     --color-green: ${COLORS.green};
 
-    --font-weight-normal: ${FONT_WEIGHTS.regular};
+    --font-weight-regular: ${FONT_WEIGHTS.regular};
     --font-weight-medium: ${FONT_WEIGHTS.medium};
     --font-weight-semibold: ${FONT_WEIGHTS.semibold};
     --font-weight-bold: ${FONT_WEIGHTS.bold};
