@@ -22,7 +22,7 @@ const StyledLink = styled(Link)`
   z-index: 1;
 
   font-size: 28px;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
 
   color: var(--color-black-text);
   text-decoration: none;
