@@ -32,7 +32,7 @@ const Wrapper = styled.section`
 const Text = styled.span`
   color: var(--color-black-text);
 
-  font-size: 40px;
+  font-size: 36px;
   font-weight: var(--font-weight-regular);
 
   line-height: 1.25;
