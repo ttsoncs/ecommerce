@@ -13,6 +13,7 @@ import Banner from "@/components/Banner";
 import Separator from "@/components/Separator";
 import Hero from "@/components/Hero";
 import Quote from "@/components/Quote";
+import Rule from "@/components/Rule";
 
 export const metadata = {
   title: `côlafruits - Fruits store`,
@@ -74,6 +75,7 @@ export default function RootLayout({ children }) {
             <Quote />
             {children}
           </MaxWidthWrapper>
+          <Rule/>
           <Analytics />
           <SpeedInsights />
           <GlobalStyles />
