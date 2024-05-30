@@ -1,2 +1,2 @@
-export * from './Rule';
-export { default } from './Rule';
+export * from './Divider';
+export { default } from './Divider';

@@ -20,11 +20,9 @@ function Quote() {
 }
 
 const Wrapper = styled.section`
-  margin-block: 80px;
   margin-inline: var(--space-laptop);
 
   @media ${QUERIES.phoneAndSmaller} {
-    margin-block: 60px;
     margin-inline: var(--space-phone);
   }
 `;

@@ -14,6 +14,7 @@ import Separator from "@/components/Separator";
 import Hero from "@/components/Hero";
 import Quote from "@/components/Quote";
 import Divider from "@/components/Divider";
+import Spacer from "@/components/Spacer";
 
 export const metadata = {
   title: `côlafruits - Fruits store`,
@@ -71,11 +72,16 @@ export default function RootLayout({ children }) {
           </Banner>
           <MaxWidthWrapper>
             <Header />
+            <Spacer
+              size={`calc(24px + var(--height-banner))`}
+              hasUnit={true}
+            />
             <Hero />
+            <Spacer size={80} />
             <Quote />
-            {children}
           </MaxWidthWrapper>
-          <Divider />
+          <Divider size={64} />
+          {children}
           <Analytics />
           <SpeedInsights />
           <GlobalStyles />
