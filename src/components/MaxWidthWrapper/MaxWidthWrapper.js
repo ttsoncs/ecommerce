@@ -12,7 +12,7 @@ function MaxWidthWrapper({ children }) {
 const Wrapper = styled.div`
   margin-inline: auto;
   max-width: ${BREAKPOINTS.laptopMax}px;
-  min-height: 100%;
+  /* min-height: 100%; */
   position: relative;
 
   @media ${QUERIES.tabletAndSmaller} {
