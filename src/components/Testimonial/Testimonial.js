@@ -24,13 +24,13 @@ const Wrapper = styled.section`
 const Text = styled.p`
   color: var(--color-black-text);
 
-  font-size: 36px;
+  font-size: 32px;
   font-weight: var(--font-weight-medium);
 
   line-height: 1.25;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: 32px;
+    font-size: 28px;
   }
 `;
 
