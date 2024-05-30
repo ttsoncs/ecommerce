@@ -8,7 +8,7 @@ import { QUERIES } from "@/constants";
 function Testimonial() {
   return (
     <Wrapper>
-      <Text>They&#39;re loving our products.</Text>
+      <Text>Come see why everyone loves our fruit!</Text>
     </Wrapper>
   );
 }
