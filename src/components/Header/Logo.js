@@ -17,6 +17,8 @@ function Logo({ handleClose }) {
 }
 
 const StyledLink = styled(Link)`
+  position: relative;
+
   display: flex;
   flex: 0;
   z-index: 1;
@@ -31,6 +33,16 @@ const StyledLink = styled(Link)`
 
   &:hover {
     opacity: 0.6;
+  }
+
+  &::after {
+    --tap-increment: -8px;
+    content: "";
+    position: absolute;
+    top: var(--tap-increment);
+    left: var(--tap-increment);
+    right: var(--tap-increment);
+    bottom: var(--tap-increment);
   }
 
   @media ${QUERIES.phoneAndSmaller} {

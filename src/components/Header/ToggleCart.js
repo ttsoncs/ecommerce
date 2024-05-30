@@ -50,6 +50,16 @@ const Wrapper = styled.button`
     opacity: 0.6;
   }
 
+  &::after {
+    --tap-increment: -8px;
+    content: "";
+    position: absolute;
+    top: var(--tap-increment);
+    left: var(--tap-increment);
+    right: var(--tap-increment);
+    bottom: var(--tap-increment);
+  }
+
   @media ${QUERIES.phoneAndSmaller} {
     z-index: 0;
   }

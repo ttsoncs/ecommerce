@@ -30,8 +30,9 @@ function ToggleSearch({ isModalOpen, handelToggle }) {
 }
 
 const Wrapper = styled.button`
+  position: relative;
   z-index: 1;
-  
+
   background-color: transparent;
   border: none;
   padding: 0;
@@ -41,6 +42,16 @@ const Wrapper = styled.button`
 
   &:hover {
     opacity: 0.6;
+  }
+
+  &::after {
+    --tap-increment: -8px;
+    content: "";
+    position: absolute;
+    top: var(--tap-increment);
+    left: var(--tap-increment);
+    right: var(--tap-increment);
+    bottom: var(--tap-increment);
   }
 
   @media ${QUERIES.phoneAndSmaller} {
@@ -59,7 +70,7 @@ const ImageWrapper = styled.div`
 
   @media ${QUERIES.phoneAndSmaller} {
     display: revert;
-    
+
     position: relative;
 
     width: var(--width);

@@ -29,8 +29,10 @@ function ToggleMenu({ isModalOpen, handelToggle }) {
 
 const Wrapper = styled.button`
   display: none;
-  
+
   @media ${QUERIES.phoneAndSmaller} {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +45,16 @@ const Wrapper = styled.button`
 
     width: var(--size-toggle);
     height: var(--size-toggle);
+
+    &::after {
+      --tap-increment: -8px;
+      content: "";
+      position: absolute;
+      top: var(--tap-increment);
+      left: var(--tap-increment);
+      right: var(--tap-increment);
+      bottom: var(--tap-increment);
+    }
   }
 `;
 
