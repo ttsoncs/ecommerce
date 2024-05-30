@@ -5,12 +5,12 @@ import styled from "styled-components";
 
 import { QUERIES } from "@/constants";
 
-function Rule() {
-  return <Wrapper />;
+function Divider() {
+  return <StyledHr />;
 }
 
-const Wrapper = styled.hr`
-  opacity: 30%;
+const StyledHr = styled.hr`
+  opacity: 40%;
 
   color: var(--color-rule);
 
@@ -21,4 +21,4 @@ const Wrapper = styled.hr`
   }
 `;
 
-export default Rule;
+export default Divider;

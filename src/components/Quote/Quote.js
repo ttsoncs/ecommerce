@@ -29,7 +29,7 @@ const Wrapper = styled.section`
   }
 `;
 
-const Text = styled.span`
+const Text = styled.h1`
   color: var(--color-black-text);
 
   font-size: 36px;
