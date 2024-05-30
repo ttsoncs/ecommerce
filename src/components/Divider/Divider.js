@@ -16,7 +16,7 @@ function Divider({ size = 0, hasUnit = false }) {
 }
 
 const StyledHr = styled.hr`
-  opacity: 40%;
+  opacity: 30%;
 
   color: var(--color-rule);
 

@@ -10,7 +10,7 @@ function Background({ children }) {
 const Wrapper = styled.body`
   background-color: var(--color-background);
 
-  min-height: 100%;
+  /* min-height: 100%; */
 `;
 
 export default Background;
