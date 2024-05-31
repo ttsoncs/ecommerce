@@ -46,8 +46,6 @@ const StyledLink = styled(Link)`
   }
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: 24px;
-
     z-index: 0;
   }
 `;
