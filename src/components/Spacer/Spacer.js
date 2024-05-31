@@ -3,6 +3,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { QUERIES } from "@/constants";
+
 function Spacer({ size = 0, hasUnit = false }) {
   const finalSize = hasUnit ? size : `${size}px`;
 
@@ -17,6 +19,10 @@ function Spacer({ size = 0, hasUnit = false }) {
 
 const Space = styled.div`
   height: var(--size);
+
+  @media ${QUERIES.phoneAndSmaller} {
+    height: calc(var(--size) * 0.6);
+  }
 `;
 
 export default Spacer;

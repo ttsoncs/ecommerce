@@ -3,6 +3,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { QUERIES } from "@/constants";
+
 function Divider({ size = 0, hasUnit = false }) {
   const finalSize = hasUnit ? size : `${size}px`;
 
@@ -21,6 +23,10 @@ const StyledHr = styled.hr`
   color: var(--color-rule);
 
   margin-block: var(--size);
+
+  @media ${QUERIES.phoneAndSmaller} {
+    margin-block: calc(var(--size) * 0.6);
+  }
 `;
 
 export default Divider;

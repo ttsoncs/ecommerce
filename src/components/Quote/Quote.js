@@ -30,13 +30,13 @@ const Wrapper = styled.section`
 const Text = styled.h1`
   color: var(--color-black-text);
 
-  font-size: 36px;
+  font-size: 40px;
   font-weight: var(--font-weight-regular);
 
   line-height: 1.25;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: 32px;
+    font-size: 36px;
   }
 `;
 

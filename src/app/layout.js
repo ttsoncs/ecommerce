@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 
 import StyledComponentsRegistry from "@/lib/registry";
 
-import AppBackground from "@/components/Background";
+import Background from "@/components/Background";
 import GlobalStyles from "@/components/GlobalStyles";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Header from "@/components/Header";
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <StyledComponentsRegistry>
-        <AppBackground>
+        <Background>
           <Banner>
             <span>Subscribe and save 20%</span>
             <Separator />
@@ -80,9 +80,7 @@ export default function RootLayout({ children }) {
             <Hero />
             <Spacer size={80} />
             <Quote />
-          </MaxWidthWrapper>
-          <Divider size={64} />
-          <MaxWidthWrapper>
+            <Divider size={80} />
             <Testimonial />
             <Spacer size={128} />
           </MaxWidthWrapper>
@@ -90,7 +88,7 @@ export default function RootLayout({ children }) {
           <Analytics />
           <SpeedInsights />
           <GlobalStyles />
-        </AppBackground>
+        </Background>
       </StyledComponentsRegistry>
     </html>
   );

@@ -9,6 +9,11 @@ function Testimonial() {
   return (
     <Wrapper>
       <Text>The Squad is Snacking!</Text>
+      <CardWrapper>
+        <Card1 />
+        <Card2 />
+        <Card3 />
+      </CardWrapper>
     </Wrapper>
   );
 }
@@ -22,15 +27,53 @@ const Wrapper = styled.section`
 `;
 
 const Text = styled.p`
+  margin-bottom: 140px;
+
   color: var(--color-black-text);
 
-  font-size: 32px;
+  font-size: 36px;
   font-weight: var(--font-weight-medium);
 
   line-height: 1.25;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: 28px;
+    margin-bottom: 48px;
+
+    font-size: 32px;
+  }
+`;
+
+const CardWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const Card1 = styled.section`
+  height: 640px;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    height: 448px;
+  }
+`;
+
+const Card2 = styled.section`
+  height: 640px;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    height: 448px;
+  }
+`;
+
+const Card3 = styled.section`
+  height: 640px;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    height: 448px;
   }
 `;
 
