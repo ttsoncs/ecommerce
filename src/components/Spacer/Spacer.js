@@ -21,7 +21,7 @@ const Space = styled.div`
   height: var(--size);
 
   @media ${QUERIES.phoneAndSmaller} {
-    height: calc(var(--size) * 0.6);
+    height: calc(var(--size) * 0.8);
   }
 `;
 
