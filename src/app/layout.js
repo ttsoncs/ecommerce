@@ -80,7 +80,7 @@ export default function RootLayout({ children }) {
             <Hero />
             <Spacer size={80} />
             <Quote />
-            <Divider size={80} />
+            <Divider size={64} />
             <Testimonial />
             <Spacer size={128} />
           </MaxWidthWrapper>
