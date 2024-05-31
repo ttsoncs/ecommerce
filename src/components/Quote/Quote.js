@@ -41,9 +41,8 @@ const Text = styled.h1`
 `;
 
 const Highlight = styled.strong`
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-medium);
 
-  color: var(--color-blue);
 `;
 
 export default Quote;

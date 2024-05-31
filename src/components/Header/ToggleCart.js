@@ -85,7 +85,7 @@ const Quantity = styled.span`
 
   margin-left: -4px;
 
-  color: var(--color-black-text);
+  color: var(--color-white-text);
   background-color: var(--color-quantity);
 
   font-size: 14px;

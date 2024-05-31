@@ -65,6 +65,8 @@ const Wrapper = styled.div`
   margin-inline: var(--space-laptop);
 
   @media ${QUERIES.phoneAndSmaller} {
+    align-items: flex-end;
+
     margin-inline: var(--space-phone);
   }
 `;
