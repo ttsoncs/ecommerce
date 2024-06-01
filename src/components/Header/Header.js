@@ -53,6 +53,7 @@ const MaxWidthWrapper = styled.header`
   width: 100%;
   height: var(--height-header);
 
+  box-shadow: 0 5px 15px 10px white;
   background-color: var(--color-background);
 `;
 
