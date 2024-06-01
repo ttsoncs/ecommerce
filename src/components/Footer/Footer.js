@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import React from "react";
 import styled from "styled-components";
@@ -29,7 +30,21 @@ function Footer() {
             return (
               <React.Fragment key={title}>
                 {index != 0 && <Separator gap={16}>·</Separator>}
-                <StyledLink href={href}>{title}</StyledLink>
+                <StyledLink href={href}>
+                  {title}
+                  <ImageWrapper
+                    style={{
+                      "--width": `20px`,
+                      "--height": `20px`,
+                    }}
+                  >
+                    <Image
+                      src="/images/arrow-up-right.svg"
+                      fill={true}
+                      alt="Arrow"
+                    />
+                  </ImageWrapper>
+                </StyledLink>
               </React.Fragment>
             );
           })}
@@ -59,7 +74,7 @@ const FooterWrapper = styled.div`
   }
 `;
 
-const LegalsLinkWrapper = styled.p`
+const LegalsLinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,6 +98,8 @@ const Logo = styled.span`
 `;
 
 const StyledLink = styled(Link)`
+  display: flex;
+
   color: var(--color-black-text);
 
   font-size: 17px;
@@ -91,10 +108,17 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-const SocialsLinkWrapper = styled.p`
+const SocialsLinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+const ImageWrapper = styled.div`
+  position: relative;
+
+  width: var(--width);
+  height: var(--height);
 `;
 
 export default Footer;
