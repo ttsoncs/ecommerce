@@ -16,9 +16,10 @@ import Quote from "@/components/Quote";
 import Divider from "@/components/Divider";
 import Spacer from "@/components/Spacer";
 import Testimonial from "@/components/Testimonial";
+import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: `côlafruits - Fruits store`,
+  title: `côlafruits® - Fruits store`,
   description: "Fresh, Seasonal Fruits Delivered to Your Door!",
 };
 
@@ -66,9 +67,9 @@ export default function RootLayout({ children }) {
         <Background>
           <Banner>
             <span>Subscribe and save 20%</span>
-            <Separator />
+            <Separator gap={8}>|</Separator>
             <span>Free shipping in 🇻🇳 Vietnam over 500.000đ</span>
-            <Separator />
+            <Separator gap={8}>|</Separator>
             <span>Save more on quantity 6+ refills 10% off</span>
           </Banner>
           <MaxWidthWrapper>
@@ -83,6 +84,9 @@ export default function RootLayout({ children }) {
             <Divider size={64} />
             <Testimonial />
             <Spacer size={128} />
+            <Divider size={64} />
+            <Footer />
+            <Spacer size={32} />
           </MaxWidthWrapper>
           {children}
           <Analytics />

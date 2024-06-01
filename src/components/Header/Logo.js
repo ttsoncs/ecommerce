@@ -11,7 +11,7 @@ function Logo({ handleClose }) {
       href="/"
       onClick={handleClose}
     >
-      côlafruits
+      côlafruits&#174;
     </StyledLink>
   );
 }

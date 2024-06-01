@@ -36,3 +36,13 @@ export const QUERIES = {
   tabletAndSmaller: `(max-width: ${BREAKPOINTS.tabletMax / 16}rem)`,
   laptopAndSmaller: `(max-width: ${BREAKPOINTS.laptopMax / 16}rem)`,
 };
+
+export const LEGAL_LINKS = [
+  { title: "Privacy Policy", href: "/privacy" },
+  { title: "Terms and Conditions", href: "/terms" },
+];
+
+export const SOCIAL_LINKS = [
+  { title: "Facebook", href: "/" },
+  { title: "Instagram", href: "/" },
+];
