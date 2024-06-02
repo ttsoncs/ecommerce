@@ -1,14 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 import React from "react";
 import styled from "styled-components";
 
-import Separator from "@/components/Separator";
+import LegalLinks from "./LegalLinks";
+import SocialLinks from "./SocialLinks";
 
-import { QUERIES, LEGAL_LINKS, SOCIAL_LINKS } from "@/constants";
+import { QUERIES } from "@/constants";
 
 function Footer() {
   return (
@@ -16,38 +16,10 @@ function Footer() {
       <FooterWrapper>
         <LegalsLinkWrapper>
           <Logo>&#169; {new Date().getFullYear()} côlafruits</Logo>
-          {LEGAL_LINKS.map(({ title, href }) => {
-            return (
-              <React.Fragment key={title}>
-                <Separator gap={16}>·</Separator>
-                <StyledLink href={href}>{title}</StyledLink>
-              </React.Fragment>
-            );
-          })}
+          <LegalLinks />
         </LegalsLinkWrapper>
         <SocialsLinkWrapper>
-          {SOCIAL_LINKS.map(({ title, href }, index) => {
-            return (
-              <React.Fragment key={title}>
-                {index != 0 && <Separator gap={16}>·</Separator>}
-                <StyledLink href={href}>
-                  {title}
-                  <ImageWrapper
-                    style={{
-                      "--width": `20px`,
-                      "--height": `20px`,
-                    }}
-                  >
-                    <Image
-                      src="/images/arrow-up-right.svg"
-                      fill={true}
-                      alt="Arrow"
-                    />
-                  </ImageWrapper>
-                </StyledLink>
-              </React.Fragment>
-            );
-          })}
+          <SocialLinks />
         </SocialsLinkWrapper>
       </FooterWrapper>
     </Wrapper>
@@ -97,28 +69,10 @@ const Logo = styled.span`
   font-weight: var(--font-weight-medium);
 `;
 
-const StyledLink = styled(Link)`
-  display: flex;
-
-  color: var(--color-black-text);
-
-  font-size: 17px;
-  font-weight: var(--font-weight-medium);
-
-  text-decoration: none;
-`;
-
 const SocialsLinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
-
-const ImageWrapper = styled.div`
-  position: relative;
-
-  width: var(--width);
-  height: var(--height);
 `;
 
 export default Footer;

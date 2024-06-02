@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
             <Divider size={64} />
             <Testimonial />
             <Spacer size={128} />
-            <Divider size={64} />
+            <Divider size={32} />
             <Footer />
             <Spacer size={32} />
           </MaxWidthWrapper>
