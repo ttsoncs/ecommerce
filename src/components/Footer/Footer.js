@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 import React from "react";
 import styled from "styled-components";
 
@@ -13,40 +11,43 @@ import { QUERIES } from "@/constants";
 function Footer() {
   return (
     <Wrapper>
-      <FooterWrapper>
-        <LegalsLinkWrapper>
-          <Logo>&#169; {new Date().getFullYear()} côlafruits</Logo>
-          <LegalLinks />
-        </LegalsLinkWrapper>
-        <SocialsLinkWrapper>
-          <SocialLinks />
-        </SocialsLinkWrapper>
-      </FooterWrapper>
+      <LegalLinksWrapper>
+        <Logo>&#169; {new Date().getFullYear()} côlafruits</Logo>
+        <LegalLinks />
+      </LegalLinksWrapper>
+      <SocialLinksWrapper>
+        <SocialLinks />
+      </SocialLinksWrapper>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.footer`
-  margin-inline: var(--space-laptop);
-
-  @media ${QUERIES.phoneAndSmaller} {
-    margin-inline: var(--space-phone);
-  }
-`;
-
-const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 64px;
+
+  margin-inline: var(--space-laptop);
 
   @media ${QUERIES.phoneAndSmaller} {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+
+    margin-inline: var(--space-phone);
   }
 `;
 
-const LegalsLinkWrapper = styled.div`
+const LinkWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const SocialLinksWrapper = styled(LinkWrapper)``;
+
+const LegalLinksWrapper = styled(LinkWrapper)`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,23 +57,17 @@ const LegalsLinkWrapper = styled.div`
     align-items: flex-start;
     gap: 12px;
 
-    span:not(:first-of-type) {
+    span {
       display: none;
     }
   }
 `;
 
-const Logo = styled.span`
+const Logo = styled.p`
   color: var(--color-gray-text);
 
   font-size: 17px;
   font-weight: var(--font-weight-medium);
-`;
-
-const SocialsLinkWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 `;
 
 export default Footer;
