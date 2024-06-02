@@ -3,12 +3,16 @@
 import React from "react";
 import styled from "styled-components";
 
-import { QUERIES } from "@/constants";
+import Content from "./Content";
 
-function Banner({ children }) {
+import { QUERIES, BANNER_CONTENTS } from "@/constants";
+
+function Banner() {
   return (
     <Wrapper>
-      <Text>{children}</Text>
+      <Text>
+        <Content content={BANNER_CONTENTS} />
+      </Text>
     </Wrapper>
   );
 }
