@@ -23,6 +23,8 @@ function LegalLinks() {
 }
 
 const StyledLink = styled(Link)`
+  position: relative;
+
   display: flex;
 
   color: var(--color-black-text);
