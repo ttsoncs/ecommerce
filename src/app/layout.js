@@ -1,6 +1,8 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
+import React from "react";
+
 import localFont from "next/font/local";
 
 import StyledComponentsRegistry from "@/lib/registry";
@@ -17,6 +19,8 @@ import Divider from "@/components/Divider";
 import Spacer from "@/components/Spacer";
 import Testimonial from "@/components/Testimonial";
 import Footer from "@/components/Footer";
+
+import { BANNER_MESSAGES } from "@/constants";
 
 export const metadata = {
   title: `côlafruits® - Fruits store`,
@@ -66,11 +70,7 @@ export default function RootLayout({ children }) {
       <StyledComponentsRegistry>
         <Background>
           <Banner>
-            Subscribe and save 20%
-            <Separator gap={8}>|</Separator>
-            Free shipping in 🇻🇳 Vietnam over 500.000đ
-            <Separator gap={8}>|</Separator>
-            Save more on quantity 6+ refills 10% off
+            <BannerContent content={BANNER_MESSAGES} />
           </Banner>
           <MaxWidthWrapper>
             <Header />
@@ -95,5 +95,25 @@ export default function RootLayout({ children }) {
         </Background>
       </StyledComponentsRegistry>
     </html>
+  );
+}
+
+function BannerContent({ content }) {
+  const num_elements = content.length * 2 - 1;
+
+  return (
+    <>
+      {Array(num_elements)
+        .fill(null)
+        .map((_, index) => (
+          <>
+            {index % 2 === 0 ? (
+              content[index / 2]
+            ) : (
+              <Separator gap={8}>|</Separator>
+            )}
+          </>
+        ))}
+    </>
   );
 }

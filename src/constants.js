@@ -37,6 +37,12 @@ export const QUERIES = {
   laptopAndSmaller: `(max-width: ${BREAKPOINTS.laptopMax / 16}rem)`,
 };
 
+export const BANNER_MESSAGES = [
+  "Subscribe and save 20%",
+  "Free shipping in 🇻🇳 Vietnam over 500.000đ",
+  "Save more on quantity 6+ refills 10% off",
+];
+
 export const LEGAL_LINKS = [
   { title: "Privacy Policy", href: "/privacy" },
   { title: "Terms and Conditions", href: "/terms" },

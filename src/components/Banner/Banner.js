@@ -14,18 +14,19 @@ function Banner({ children }) {
 }
 
 const Wrapper = styled.aside`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
 
   position: fixed;
-  top: 0;
   z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
 
-  width: 100%;
   height: var(--height-banner);
 
   background-color: var(--color-banner);
+
   overflow: auto;
 
   @media ${QUERIES.phoneAndSmaller} {
@@ -38,8 +39,6 @@ const Text = styled.p`
 
   font-size: 14px;
   font-weight: var(--font-weight-medium);
-
-  text-align: center;
 
   margin-inline: 16px;
 
