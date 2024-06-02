@@ -10,11 +10,8 @@ import GlobalStyles from "@/components/GlobalStyles";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
-import Hero from "@/components/Hero";
-import Quote from "@/components/Quote";
 import Divider from "@/components/Divider";
 import Spacer from "@/components/Spacer";
-import Testimonial from "@/components/Testimonial";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -40,7 +37,7 @@ const wotfard = localFont({
       style: "normal",
     },
     {
-      path: "../../public/fonts/BMDANIEL-Bold.woff2",
+      path: "../../public/fonts/wotfard-bold-webfont.woff2",
       weight: "700",
       style: "normal",
     },
@@ -71,17 +68,11 @@ export default function RootLayout({ children }) {
               size={`calc(24px + var(--height-banner))`}
               hasUnit={true}
             />
-            <Hero />
-            <Spacer size={80} />
-            <Quote />
-            <Divider size={64} />
-            <Testimonial />
-            <Spacer size={128} />
+            {children}
             <Divider size={32} />
             <Footer />
             <Spacer size={32} />
           </MaxWidthWrapper>
-          {children}
           <Analytics />
           <SpeedInsights />
           <GlobalStyles />
