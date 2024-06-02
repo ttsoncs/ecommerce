@@ -15,7 +15,7 @@ function Spacer({ size = 0, hasUnit = false }) {
   );
 }
 
-const Space = styled.div`
+const Space = styled.aside`
   height: var(--size);
 `;
 

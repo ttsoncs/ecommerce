@@ -72,7 +72,7 @@ const ImageWrapper = styled.div`
   height: var(--height);
 `;
 
-const Quantity = styled.span`
+const Quantity = styled.p`
   display: flex;
   justify-content: center;
   align-items: center;

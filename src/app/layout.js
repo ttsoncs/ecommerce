@@ -66,11 +66,11 @@ export default function RootLayout({ children }) {
       <StyledComponentsRegistry>
         <Background>
           <Banner>
-            <span>Subscribe and save 20%</span>
+            Subscribe and save 20%
             <Separator gap={8}>|</Separator>
-            <span>Free shipping in 🇻🇳 Vietnam over 500.000đ</span>
+            Free shipping in 🇻🇳 Vietnam over 500.000đ
             <Separator gap={8}>|</Separator>
-            <span>Save more on quantity 6+ refills 10% off</span>
+            Save more on quantity 6+ refills 10% off
           </Banner>
           <MaxWidthWrapper>
             <Header />

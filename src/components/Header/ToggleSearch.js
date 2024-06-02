@@ -78,7 +78,7 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const Text = styled.span`
+const Text = styled.p`
   color: var(--color-black-text);
 
   font-size: 17px;
