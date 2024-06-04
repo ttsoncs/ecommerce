@@ -37,7 +37,7 @@ export const QUERIES = {
   laptopAndSmaller: `(max-width: ${BREAKPOINTS.laptopMax / 16}rem)`,
 };
 
-export const BANNER_CONTENTS = [
+export const BANNER_CTA = [
   "Subscribe and save 20%",
   "Free shipping in 🇻🇳 Vietnam over 500.000đ",
   "Save more on quantity 6+ refills 10% off",

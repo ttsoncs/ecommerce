@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 function Spacer({ size = 0 }) {
   return (
-    <Space
+    <Wrapper
       style={{
         "--size": `${size}px`,
       }}
@@ -13,7 +13,7 @@ function Spacer({ size = 0 }) {
   );
 }
 
-const Space = styled.div`
+const Wrapper = styled.div`
   height: var(--size);
 `;
 

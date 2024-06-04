@@ -2,7 +2,7 @@ import React from "react";
 
 import Separator from "@/components/Separator";
 
-function Content({ content }) {
+function CTA({ content }) {
   const num_elements = content.length * 2 - 1;
 
   return (
@@ -22,4 +22,4 @@ function Content({ content }) {
   );
 }
 
-export default Content;
+export default CTA;

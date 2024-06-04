@@ -48,7 +48,7 @@ const GlobalStyles = createGlobalStyle`
     --color-banner: ${COLORS.black};
     --color-modal: ${COLORS.gray[100]};
     --color-quantity: ${COLORS.black};
-    --color-rule: ${COLORS.gray[100]};
+    --color-divider: ${COLORS.gray[100]};
 
     --color-blue: ${COLORS.blue};
     --color-purple: ${COLORS.purple};

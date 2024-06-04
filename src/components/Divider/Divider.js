@@ -5,22 +5,20 @@ import styled from "styled-components";
 
 import { QUERIES } from "@/constants";
 
-function Divider({ size = 0, hasUnit = false }) {
-  const finalSize = hasUnit ? size : `${size}px`;
-
+function Divider({ size = 0 }) {
   return (
-    <StyledHr
+    <Wrapper
       style={{
-        "--size": finalSize,
+        "--size": `${size}px`,
       }}
     />
   );
 }
 
-const StyledHr = styled.hr`
+const Wrapper = styled.hr`
   opacity: 30%;
 
-  color: var(--color-rule);
+  color: var(--color-divider);
 
   margin-block: var(--size);
 

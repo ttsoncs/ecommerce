@@ -64,9 +64,7 @@ export default function RootLayout({ children }) {
           <Banner />
           <MaxWidthWrapper>
             <Header />
-            <Spacer
-              size={56}
-            />
+            <Spacer size={24} />
             {children}
             <Divider size={32} />
             <Footer />

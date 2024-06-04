@@ -3,28 +3,26 @@
 import React from "react";
 import styled from "styled-components";
 
-import Content from "./Content";
+import CTA from "./CTA";
 
-import { QUERIES, BANNER_CONTENTS } from "@/constants";
+import { QUERIES, BANNER_CTA } from "@/constants";
 
 function Banner() {
   return (
     <Wrapper>
-      <Text>
-        <Content content={BANNER_CONTENTS} />
-      </Text>
+      <CTAWrapper>
+        <CTA content={BANNER_CTA} />
+      </CTAWrapper>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.aside`
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  /* position: fixed; */
-  /* top: 0; */
-  /* left: 0; */
-  /* right: 0; */
+  position: relative;
   z-index: 2;
 
   height: var(--height-banner);
@@ -38,7 +36,7 @@ const Wrapper = styled.aside`
   }
 `;
 
-const Text = styled.p`
+const CTAWrapper = styled.p`
   color: var(--color-white-text);
 
   font-size: 14px;
