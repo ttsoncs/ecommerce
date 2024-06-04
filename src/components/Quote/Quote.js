@@ -55,13 +55,13 @@ const Wrapper = styled.blockquote`
 const Text = styled.div`
   color: var(--color-black-text);
 
-  font-size: 44px;
+  font-size: 40px;
   font-weight: var(--font-weight-regular);
 
   line-height: 1.25;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: 40px;
+    font-size: 36px;
   }
 `;
 
@@ -77,8 +77,8 @@ const ImageWrapper = styled.div`
   position: relative;
   top: 4px;
 
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 `;
 
 export default Quote;
