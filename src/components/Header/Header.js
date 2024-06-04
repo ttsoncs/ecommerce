@@ -47,7 +47,7 @@ const MaxWidthWrapper = styled.header`
   align-items: center;
   z-index: 1;
 
-  position: sticky;
+  /* position: sticky; */
   top: var(--height-banner);
 
   width: 100%;

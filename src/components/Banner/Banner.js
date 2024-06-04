@@ -21,11 +21,11 @@ const Wrapper = styled.aside`
   display: grid;
   place-content: center;
 
-  position: fixed;
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
   z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
 
   height: var(--height-banner);
 

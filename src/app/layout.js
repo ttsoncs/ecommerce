@@ -16,7 +16,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: `côlafruits - Fruits store`,
-  description: "Fresh, Seasonal Fruits Delivered to Your Door!",
+  description: "Fresh Fruits Delivered to Your Door!",
 };
 
 const wotfard = localFont({
