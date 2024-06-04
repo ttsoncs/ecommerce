@@ -19,9 +19,6 @@ function Footer() {
         <SocialLinksWrapper>
           <SocialLinks />
         </SocialLinksWrapper>
-        <Credit>
-          Inspired by mishmash.pt with wotfard typeface by Atipo Foundry.
-        </Credit>
       </Wrapper>
     </>
   );
@@ -68,14 +65,5 @@ const Copyright = styled.p`
 `;
 
 const SocialLinksWrapper = styled(LinkWrapper)``;
-
-const Credit = styled.aside`
-  color: var(--color-gray-text);
-
-  font-size: 17px;
-  font-weight: var(--font-weight-medium);
-
-  flex-basis: 100%;
-`;
 
 export default Footer;
