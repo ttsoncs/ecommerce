@@ -25,7 +25,7 @@ function Quote() {
           obsessed
         </Highlight>{" "}
         with flavor and nature{"'"}s finest. Our premium fruits are
-        hand-selected for perfection, offering a taste unlike any other. Don't
+        hand-selected for perfection, offering a taste unlike any other. Don{"'"}t
         miss out on our most popular{" "}
         <Highlight>
           {" "}
