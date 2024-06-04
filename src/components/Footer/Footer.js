@@ -10,24 +10,29 @@ import { QUERIES } from "@/constants";
 
 function Footer() {
   return (
-    <Wrapper>
-      <LegalLinksWrapper>
-        <Logo>&#169; {new Date().getFullYear()} côlafruits</Logo>
-        <LegalLinks />
-      </LegalLinksWrapper>
-      <SocialLinksWrapper>
-        <SocialLinks />
-      </SocialLinksWrapper>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <LegalLinksWrapper>
+          <Copyright>&#169; {new Date().getFullYear()} côlafruits</Copyright>
+          <LegalLinks />
+        </LegalLinksWrapper>
+        <SocialLinksWrapper>
+          <SocialLinks />
+        </SocialLinksWrapper>
+        <Credit>
+          Inspired by <Highlight>mishmash.pt</Highlight> with{" "}
+          <Highlight>wotfard</Highlight> typeface by Atipo Foundry.
+        </Credit>
+      </Wrapper>
+    </>
   );
 }
 
 const Wrapper = styled.footer`
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px 64px;
+  gap: 24px 64px;
 
   margin-inline: var(--space-laptop);
 
@@ -42,16 +47,9 @@ const Wrapper = styled.footer`
 const LinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
 `;
 
-const SocialLinksWrapper = styled(LinkWrapper)``;
-
 const LegalLinksWrapper = styled(LinkWrapper)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   @media ${QUERIES.phoneAndSmaller} {
     flex-direction: column;
     align-items: flex-start;
@@ -63,11 +61,28 @@ const LegalLinksWrapper = styled(LinkWrapper)`
   }
 `;
 
-const Logo = styled.p`
+const Copyright = styled.p`
   color: var(--color-gray-text);
 
   font-size: 17px;
   font-weight: var(--font-weight-medium);
+`;
+
+const SocialLinksWrapper = styled(LinkWrapper)``;
+
+const Credit = styled.aside`
+  display: block;
+
+  color: var(--color-gray-text);
+
+  font-size: 17px;
+  font-weight: var(--font-weight-medium);
+
+  flex-basis: 100%;
+`;
+
+const Highlight = styled.strong`
+  font-weight: var(--font-weight-semibold);
 `;
 
 export default Footer;
