@@ -3,19 +3,17 @@
 import React from "react";
 import styled from "styled-components";
 
-function Spacer({ size = 0, hasUnit = false }) {
-  const finalSize = hasUnit ? size : `${size}px`;
-
+function Spacer({ size = 0 }) {
   return (
     <Space
       style={{
-        "--size": finalSize,
+        "--size": `${size}px`,
       }}
     />
   );
 }
 
-const Space = styled.aside`
+const Space = styled.div`
   height: var(--size);
 `;
 

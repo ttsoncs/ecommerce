@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import React from "react";
 import styled from "styled-components";
 
@@ -9,17 +11,40 @@ function Quote() {
   return (
     <Wrapper>
       <Text>
-        <Highlight>We are côlafruits</Highlight>, obsessed with{" "}
-        <Highlight>flavor</Highlight> and nature&#39;s finest. Our{" "}
-        <Highlight>premium fruits</Highlight> are hand-selected for perfection,
-        offering a taste unlike any other. Dive into a world of exquisite
-        fruits, bursting with <Highlight>deliciousness!</Highlight>
+        We are côlafruits,{" "}
+        <Highlight>
+          {" "}
+          <ImageWrapper>
+            <Image
+              src="/images/circle.svg"
+              fill={true}
+              alt="Circle"
+              priority={true}
+            />
+          </ImageWrapper>{" "}
+          obsessed
+        </Highlight>{" "}
+        with flavor and nature{"'"}s finest. Our premium fruits are
+        hand-selected for perfection, offering a taste unlike any other. Don't
+        miss out on our most popular{" "}
+        <Highlight>
+          {" "}
+          <ImageWrapper>
+            <Image
+              src="/images/clover.svg"
+              fill={true}
+              alt="Clover"
+              priority={true}
+            />
+          </ImageWrapper>{" "}
+          picks!
+        </Highlight>
       </Text>
     </Wrapper>
   );
 }
 
-const Wrapper = styled.section`
+const Wrapper = styled.blockquote`
   margin-inline: var(--space-laptop);
 
   @media ${QUERIES.phoneAndSmaller} {
@@ -27,22 +52,33 @@ const Wrapper = styled.section`
   }
 `;
 
-const Text = styled.h1`
+const Text = styled.div`
   color: var(--color-black-text);
 
-  font-size: 40px;
+  font-size: 44px;
   font-weight: var(--font-weight-regular);
 
   line-height: 1.25;
 
   @media ${QUERIES.phoneAndSmaller} {
-    font-size: 36px;
+    font-size: 40px;
   }
 `;
 
 const Highlight = styled.strong`
   font-weight: var(--font-weight-medium);
 
+  white-space: nowrap;
+`;
+
+const ImageWrapper = styled.div`
+  display: inline-block;
+
+  position: relative;
+  top: 4px;
+
+  width: 40px;
+  height: 40px;
 `;
 
 export default Quote;

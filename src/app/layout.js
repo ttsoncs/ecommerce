@@ -15,7 +15,7 @@ import Spacer from "@/components/Spacer";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: `côlafruits® - Fruits store`,
+  title: `côlafruits - Fruits store`,
   description: "Fresh, Seasonal Fruits Delivered to Your Door!",
 };
 
@@ -65,8 +65,7 @@ export default function RootLayout({ children }) {
           <MaxWidthWrapper>
             <Header />
             <Spacer
-              size={`calc(24px + var(--height-banner))`}
-              hasUnit={true}
+              size={56}
             />
             {children}
             <Divider size={32} />
