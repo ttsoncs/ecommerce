@@ -5,19 +5,24 @@ import styled from "styled-components";
 
 import Separator from "@/components/Separator";
 
-import { LEGAL_LINKS } from "@/constants";
+function LegalLinks({ links }) {
+  const size = links.length * 2;
 
-function LegalLinks() {
   return (
     <>
-      {LEGAL_LINKS.map(({ title, href }) => {
-        return (
-          <React.Fragment key={title}>
-            <Separator gap={16}>·</Separator>
-            <StyledLink href={href}>{title}</StyledLink>
+      {Array(size)
+        .fill(null)
+        .map((_, index) => (
+          <React.Fragment key={index}>
+            {index % 2 === 0 ? (
+              <Separator gap={16}>·</Separator>
+            ) : (
+              <StyledLink href={links[Math.floor(index / 2)].href}>
+                {links[Math.floor(index / 2)].title}
+              </StyledLink>
+            )}
           </React.Fragment>
-        );
-      })}
+        ))}
     </>
   );
 }

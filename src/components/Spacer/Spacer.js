@@ -13,7 +13,7 @@ function Spacer({ size = 0 }) {
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.aside`
   height: var(--size);
 `;
 

@@ -3,11 +3,11 @@ import React from "react";
 import Separator from "@/components/Separator";
 
 function CTA({ content }) {
-  const num_elements = content.length * 2 - 1;
+  const size = content.length * 2 - 1;
 
   return (
     <>
-      {Array(num_elements)
+      {Array(size)
         .fill(null)
         .map((_, index) => (
           <React.Fragment key={index}>

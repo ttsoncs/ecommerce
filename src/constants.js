@@ -52,3 +52,31 @@ export const SOCIAL_LINKS = [
   { title: "Facebook", href: "/" },
   { title: "Instagram", href: "/" },
 ];
+
+export const MULTI_LINKS = [
+  {
+    category: "Product",
+    links: [
+      { title: "Shop", href: "/" },
+      { title: "Premium fruits", href: "/" },
+      { title: "Testing fruits", href: "/" },
+    ],
+  },
+  {
+    category: "Business",
+    links: [
+      { title: "Corporate Program", href: "/" },
+      { title: "Sample Shop", href: "/" },
+    ],
+  },
+  {
+    category: "Brand",
+    items: [
+      { title: "About Us", href: "/" },
+      { title: "Blog", href: "/" },
+      { title: "Brand Assets", href: "/" },
+      { title: "Newsletter", href: "/" },
+      { title: "Retailers", href: "/" },
+    ],
+  },
+];

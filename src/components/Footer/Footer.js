@@ -6,7 +6,7 @@ import styled from "styled-components";
 import LegalLinks from "./LegalLinks";
 import SocialLinks from "./SocialLinks";
 
-import { QUERIES } from "@/constants";
+import { QUERIES, LEGAL_LINKS } from "@/constants";
 
 function Footer() {
   return (
@@ -14,7 +14,7 @@ function Footer() {
       <Wrapper>
         <LegalLinksWrapper>
           <Copyright>&#169; {new Date().getFullYear()} côlafruits</Copyright>
-          <LegalLinks />
+          <LegalLinks links={LEGAL_LINKS} />
         </LegalLinksWrapper>
         <SocialLinksWrapper>
           <SocialLinks />

@@ -13,6 +13,7 @@ import Banner from "@/components/Banner";
 import Divider from "@/components/Divider";
 import Spacer from "@/components/Spacer";
 import Footer from "@/components/Footer";
+import Multilink from "@/components/Multilink";
 
 export const metadata = {
   title: `côlafruits - Fruits store`,
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
             <Header />
             <Spacer size={24} />
             {children}
+            <Multilink />
             <Divider size={32} />
             <Footer />
             <Spacer size={32} />
